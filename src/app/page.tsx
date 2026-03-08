@@ -138,7 +138,7 @@ export default function HomePage() {
           <div className="relative">
             <div className="relative aspect-[3/4] max-w-sm mx-auto lg:mx-0 overflow-hidden">
               <Image
-                src="/images/photo-2.jpg"
+                src="/images/photo-sophie.jpg"
                 alt="Sophie — Fondatrice de Maison Sophie"
                 fill
                 className="object-cover"
@@ -310,8 +310,8 @@ export default function HomePage() {
       {/* ── GALERIE ── */}
       <section className="bg-[#F2EDE4] py-4 px-4">
         <div className="grid grid-cols-3 md:grid-cols-6 gap-1">
-          {["/images/hero.jpg", "/images/photo-2.jpg", "/images/photo-3.jpg",
-            "/images/photo-4.jpg", "/images/photo-5.jpg", "/images/photo-6.jpg"].map((src, i) => (
+          {["/images/hero.jpg", "/images/ms-6.jpg", "/images/photo-4.jpg",
+            "/images/ms-1.jpg", "/images/photo-5.jpg", "/images/ms-8.jpg"].map((src, i) => (
             <div key={i} className="relative aspect-square overflow-hidden">
               <Image
                 src={src}
