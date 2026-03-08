@@ -48,8 +48,11 @@ export default function AProposPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
           {/* Photo */}
-          <div className="relative sticky top-28">
-            <div className="relative aspect-[3/4] max-w-sm mx-auto lg:mx-0 overflow-hidden">
+          <div className="sticky top-28 pb-10 pr-10 lg:pb-14 lg:pr-14 max-w-sm mx-auto lg:mx-0">
+            {/* Bloc rose poudré décalé en bas à droite */}
+            <div className="absolute bottom-0 right-0 w-[80%] h-[70%] bg-[#C9A5A0]/20" />
+            {/* Photo */}
+            <div className="relative aspect-[3/4] overflow-hidden">
               <Image
                 src="/images/photo-sophie.jpg"
                 alt="Sophie — Fondatrice de Maison Sophie"
@@ -59,7 +62,6 @@ export default function AProposPage() {
                 sizes="(max-width: 768px) 80vw, 40vw"
               />
             </div>
-            <div className="absolute -bottom-4 -right-4 lg:-right-8 w-2/3 h-2/3 border border-[#C9A5A0]/30 -z-10" />
           </div>
 
           {/* Texte complet */}
