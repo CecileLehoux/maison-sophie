@@ -31,7 +31,7 @@ const soins = [
     excerpt:
       "Dites adieu aux rasoirs et à l'épilation douloureuse. Notre laser de dernière génération offre des résultats durables sur tous les types de peau, en toute sécurité.",
     image: "/images/photo-4.jpg",
-    color: "#C8963E",
+    color: "#C9A5A0",
   },
   {
     slug: "estheled",
@@ -51,7 +51,7 @@ const soins = [
     excerpt:
       "Le drainage par pressothérapie stimule la circulation lymphatique, réduit la cellulite et accélère la récupération sportive. Résultats visibles dès la première séance.",
     image: "/images/photo-5.jpg",
-    color: "#8BA888",
+    color: "#C9A5A0",
   },
   {
     slug: "sportifs",
@@ -61,7 +61,7 @@ const soins = [
     excerpt:
       "Des protocoles sur-mesure associant massage, LED et pressothérapie pour préparer votre corps à l'effort, optimiser la récupération et prévenir les blessures.",
     image: "/images/photo-6.jpg",
-    color: "#C8963E",
+    color: "#C9A5A0",
   },
 ];
 
@@ -89,7 +89,7 @@ export default function HomePage() {
             className="text-6xl md:text-8xl font-light text-white leading-[1.05] mb-6 max-w-3xl"
           >
             L&apos;esthétique<br />
-            <em className="not-italic text-[#E8B96A]">autrement.</em>
+            <em className="not-italic text-[#8A9E7A]">autrement.</em>
           </h1>
           <p className="text-base text-white/70 max-w-lg mb-10 leading-relaxed">
             Des technologies innovantes, une expertise au service de votre bien-être.
@@ -100,7 +100,7 @@ export default function HomePage() {
               href="https://www.planity.com/maison-sophie-31170-tournefeuille"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3.5 bg-[#C8963E] text-white text-[11px] tracking-[0.2em] uppercase hover:bg-[#A07830] transition-colors"
+              className="px-8 py-3.5 bg-[#C9A5A0] text-white text-[11px] tracking-[0.2em] uppercase hover:bg-[#A8857F] transition-colors"
             >
               Prendre rendez-vous
             </a>
@@ -124,7 +124,7 @@ export default function HomePage() {
             { val: "Protocoles", label: "100 % personnalisés" },
           ].map((item) => (
             <div key={item.val} className="flex flex-col">
-              <span className="text-[#C8963E] text-sm font-medium tracking-wide">{item.val}</span>
+              <span className="text-[#C9A5A0] text-sm font-medium tracking-wide">{item.val}</span>
               <span className="text-white/40 text-[10px] tracking-[0.15em] uppercase">{item.label}</span>
             </div>
           ))}
@@ -132,7 +132,7 @@ export default function HomePage() {
       </section>
 
       {/* ── PRÉSENTATION SOPHIE ── */}
-      <section className="bg-[#FAF7F2] py-24 px-8">
+      <section className="bg-[#EAE5DC] py-24 px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Photo */}
           <div className="relative">
@@ -146,56 +146,99 @@ export default function HomePage() {
               />
             </div>
             {/* Cadre décoratif décalé */}
-            <div className="absolute -bottom-4 -right-4 lg:-right-8 w-2/3 h-2/3 border border-[#C8963E]/30 -z-10" />
+            <div className="absolute -bottom-4 -right-4 lg:-right-8 w-2/3 h-2/3 border border-[#C9A5A0]/30 -z-10" />
           </div>
 
           {/* Texte */}
           <div>
-            <p className="text-[10px] tracking-[0.4em] uppercase text-[#C8963E] mb-5">
+            <p className="text-[10px] tracking-[0.4em] uppercase text-[#C9A5A0] mb-5">
               La fondatrice
             </p>
             <h2
               style={{ fontFamily: "var(--font-display)" }}
-              className="text-5xl md:text-6xl font-light text-[#1C1208] leading-tight mb-8"
+              className="text-4xl md:text-5xl font-light text-[#1C1208] leading-tight mb-8"
             >
-              Bonjour,<br />je suis Sophie.
+              Prendre soin<br />autrement.
             </h2>
-            <div className="space-y-5 text-[#8A7D6B] leading-relaxed text-[15px]">
+
+            {/* Section 1 — Parcours */}
+            <div className="space-y-4 text-[#7A7A7A] leading-relaxed text-[15px]">
               <p>
-                Passionnée par le bien-être et les technologies esthétiques depuis plus de 15 ans,
-                j&apos;ai fondé Maison Sophie avec une conviction profonde : chaque personne mérite
-                des soins efficaces, transparents et parfaitement adaptés à son corps.
+                Infirmière diplômée d&apos;État pendant plus de 12 ans, j&apos;ai exercé avec passion dans
+                le domaine de la santé, où chaque geste compte et chaque détail a son importance.
+                C&apos;est cette exigence médicale — l&apos;exigence, l&apos;hygiène, la précision, l&apos;écoute —
+                que j&apos;ai voulu apporter dans le monde de l&apos;esthétique.
               </p>
-              <p>
-                Après une formation spécialisée en technologies esthétiques avancées — épilation laser,
-                photobiomodulation et pressothérapie — j&apos;ai choisi de m&apos;installer à Tournefeuille
-                pour créer un espace à taille humaine, loin des grandes enseignes impersonnelles.
-              </p>
-              <p>
-                Chez Maison Sophie, chaque protocole commence par une consultation approfondie.
-                Je prends le temps de comprendre vos objectifs, votre peau, votre mode de vie —
-                pour vous proposer uniquement ce qui vous sera vraiment bénéfique.
+              <p>C&apos;est ainsi qu&apos;est née Maison Sophie.</p>
+            </div>
+
+            {/* Séparateur */}
+            <div className="my-7 w-12 h-px bg-[#D4CFC8]" />
+
+            {/* Section 2 — Expertise */}
+            <div className="space-y-4">
+              <h3
+                style={{ fontFamily: "var(--font-display)" }}
+                className="text-lg font-light text-[#1C1208]"
+              >
+                Une expertise au service de votre peau et de votre bien-être
+              </h3>
+              <ul className="space-y-2">
+                {[
+                  "Une analyse personnalisée de votre peau et de vos besoins",
+                  "Des protocoles adaptés à votre phototype et à votre histoire",
+                  "Des technologies professionnelles de dernière génération",
+                  "Une hygiène et une sécurité irréprochables à chaque séance",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 text-[14px] text-[#7A7A7A]">
+                    <span className="mt-2 shrink-0 w-1 h-1 rounded-full bg-[#C9A5A0]" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-[14px] text-[#7A7A7A] leading-relaxed italic">
+                Chaque prise en charge est personnalisée, car aucune peau et aucun corps ne se ressemblent.
               </p>
             </div>
-            <div className="mt-10 pt-8 border-t border-[#E8DDD0]">
+
+            {/* Séparateur */}
+            <div className="my-7 w-12 h-px bg-[#D4CFC8]" />
+
+            {/* Section 3 — Approche globale */}
+            <div className="space-y-3">
+              <h3
+                style={{ fontFamily: "var(--font-display)" }}
+                className="text-lg font-light text-[#1C1208]"
+              >
+                Une approche globale du soin
+              </h3>
+              <p className="text-[14px] text-[#7A7A7A] leading-relaxed">
+                Maison Sophie, c&apos;est un lieu pensé pour prendre soin de votre peau, de votre corps
+                et de votre équilibre global. Mon engagement&nbsp;: vous offrir des soins efficaces,
+                dans un cadre apaisant et bienveillant.
+              </p>
+            </div>
+
+            {/* Closing */}
+            <div className="mt-10 pt-8 border-t border-[#D4CFC8]">
               <p
                 style={{ fontFamily: "var(--font-display)" }}
-                className="text-2xl font-light italic text-[#1C1208]"
+                className="text-xl font-light italic text-[#1C1208]"
               >
-                &ldquo;Mon objectif : révéler tout le potentiel de votre corps.&rdquo;
+                Maison Sophie — Un lieu où l&apos;expertise rencontre le bien-être.
               </p>
-              <p className="mt-3 text-[11px] tracking-[0.2em] uppercase text-[#C8963E]">— Sophie, Fondatrice</p>
+              <p className="mt-3 text-[11px] tracking-[0.2em] uppercase text-[#C9A5A0]">— Sophie, Fondatrice</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* ── NOS SOINS ── */}
-      <section className="bg-[#F2EDE4] py-24 px-8">
+      <section className="bg-[#E2DCD3] py-24 px-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div>
-              <p className="text-[10px] tracking-[0.4em] uppercase text-[#C8963E] mb-4">
+              <p className="text-[10px] tracking-[0.4em] uppercase text-[#C9A5A0] mb-4">
                 Ce que nous faisons
               </p>
               <h2
@@ -207,18 +250,18 @@ export default function HomePage() {
             </div>
             <Link
               href="/soins"
-              className="text-[11px] tracking-[0.2em] uppercase text-[#C8963E] border-b border-[#C8963E] pb-0.5 hover:text-[#A07830] hover:border-[#A07830] transition-colors self-start md:self-end"
+              className="text-[11px] tracking-[0.2em] uppercase text-[#C9A5A0] border-b border-[#C9A5A0] pb-0.5 hover:text-[#A8857F] hover:border-[#A8857F] transition-colors self-start md:self-end"
             >
               Voir tous les soins →
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#E8DDD0]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#D4CFC8]">
             {soins.map((soin, i) => (
               <Link
                 key={soin.slug}
                 href={`/soins/${soin.slug}`}
-                className="group relative bg-[#FAF7F2] overflow-hidden"
+                className="group relative bg-[#EAE5DC] overflow-hidden"
               >
                 {/* Image */}
                 <div className="relative h-72 overflow-hidden">
@@ -247,12 +290,12 @@ export default function HomePage() {
                 <div className="p-8">
                   <p
                     style={{ fontFamily: "var(--font-display)" }}
-                    className="text-xl italic text-[#C8963E] mb-3"
+                    className="text-xl italic text-[#C9A5A0] mb-3"
                   >
                     {soin.tagline}
                   </p>
-                  <p className="text-[14px] text-[#8A7D6B] leading-relaxed mb-6">{soin.excerpt}</p>
-                  <span className="text-[11px] tracking-[0.2em] uppercase text-[#1C1208] border-b border-[#1C1208]/30 pb-0.5 group-hover:border-[#C8963E] group-hover:text-[#C8963E] transition-colors">
+                  <p className="text-[14px] text-[#7A7A7A] leading-relaxed mb-6">{soin.excerpt}</p>
+                  <span className="text-[11px] tracking-[0.2em] uppercase text-[#1C1208] border-b border-[#1C1208]/30 pb-0.5 group-hover:border-[#C9A5A0] group-hover:text-[#C9A5A0] transition-colors">
                     En savoir plus →
                   </span>
                 </div>
@@ -263,10 +306,10 @@ export default function HomePage() {
       </section>
 
       {/* ── VALEURS / RÉASSURANCE ── */}
-      <section className="bg-[#FAF7F2] py-24 px-8">
+      <section className="bg-[#EAE5DC] py-24 px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-[10px] tracking-[0.4em] uppercase text-[#C8963E] mb-4">Pourquoi nous choisir</p>
+            <p className="text-[10px] tracking-[0.4em] uppercase text-[#C9A5A0] mb-4">Pourquoi nous choisir</p>
             <h2
               style={{ fontFamily: "var(--font-display)" }}
               className="text-5xl font-light text-[#1C1208]"
@@ -292,15 +335,15 @@ export default function HomePage() {
                 desc: "Nous ne promettons pas l'impossible. À chaque séance, nous évaluons ensemble les résultats obtenus et ajustons le protocole selon vos retours et l'évolution de votre peau.",
               },
             ].map((v) => (
-              <div key={v.num} className="border-t border-[#E8DDD0] pt-8">
-                <span className="text-[11px] tracking-[0.3em] text-[#C8963E]">{v.num}</span>
+              <div key={v.num} className="border-t border-[#D4CFC8] pt-8">
+                <span className="text-[11px] tracking-[0.3em] text-[#C9A5A0]">{v.num}</span>
                 <h3
                   style={{ fontFamily: "var(--font-display)" }}
                   className="text-2xl font-light text-[#1C1208] mt-3 mb-4"
                 >
                   {v.title}
                 </h3>
-                <p className="text-[14px] text-[#8A7D6B] leading-relaxed">{v.desc}</p>
+                <p className="text-[14px] text-[#7A7A7A] leading-relaxed">{v.desc}</p>
               </div>
             ))}
           </div>
@@ -308,7 +351,7 @@ export default function HomePage() {
       </section>
 
       {/* ── GALERIE ── */}
-      <section className="bg-[#F2EDE4] py-4 px-4">
+      <section className="bg-[#E2DCD3] py-4 px-4">
         <div className="grid grid-cols-3 md:grid-cols-6 gap-1">
           {["/images/hero.jpg", "/images/ms-6.jpg", "/images/photo-4.jpg",
             "/images/ms-1.jpg", "/images/photo-5.jpg", "/images/ms-8.jpg"].map((src, i) => (
@@ -328,7 +371,7 @@ export default function HomePage() {
       {/* ── AVIS ── */}
       <section className="bg-[#1C1208] py-24 px-8 text-white text-center">
         <div className="max-w-2xl mx-auto">
-          <div className="flex justify-center gap-1 mb-6 text-[#C8963E] text-lg tracking-widest">
+          <div className="flex justify-center gap-1 mb-6 text-[#C9A5A0] text-lg tracking-widest">
             ★★★★★
           </div>
           <blockquote
@@ -338,14 +381,14 @@ export default function HomePage() {
             &ldquo;Un cadre chaleureux, une approche professionnelle et des résultats au-delà
             de mes attentes. Je recommande Maison Sophie les yeux fermés.&rdquo;
           </blockquote>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-[#C8963E]">
+          <p className="text-[11px] tracking-[0.3em] uppercase text-[#C9A5A0]">
             Note 5/5 · Avis vérifiés Planity
           </p>
         </div>
       </section>
 
       {/* ── CTA ── */}
-      <section className="bg-[#C8963E] py-20 px-8 text-white text-center">
+      <section className="bg-[#C9A5A0] py-20 px-8 text-white text-center">
         <div className="max-w-xl mx-auto">
           <p className="text-[10px] tracking-[0.4em] uppercase text-white/70 mb-4">Prête à commencer ?</p>
           <h2
@@ -361,7 +404,7 @@ export default function HomePage() {
             href="https://www.planity.com/maison-sophie-31170-tournefeuille"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-10 py-4 bg-white text-[#C8963E] text-[11px] tracking-[0.2em] uppercase hover:bg-[#FAF7F2] transition-colors"
+            className="inline-block px-10 py-4 bg-white text-[#C9A5A0] text-[11px] tracking-[0.2em] uppercase hover:bg-[#EAE5DC] transition-colors"
           >
             Prendre rendez-vous en ligne
           </a>
