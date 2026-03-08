@@ -1,12 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream: #F9F5F0;
-  --color-bronze: #C49A6C;
-  --color-bronze-dark: #A07848;
-  --color-lagon: #44b4e7;
-  --color-charcoal: #2D2D2D;
-  --color-muted: #7A7A7A;
+  --color-cream: #FAF7F2;
+  --color-cream-dark: #F2EDE4;
+  --color-gold: #C8963E;
+  --color-gold-light: #E8B96A;
+  --color-gold-pale: #F5ECD8;
+  --color-dark: #1C1208;
+  --color-muted: #8A7D6B;
+  --color-border: #E8DDD0;
 }
 
 @layer base {
@@ -15,8 +17,13 @@
   }
 
   body {
-    background-color: #ffffff;
-    color: #2D2D2D;
+    background-color: #FAF7F2;
+    color: #1C1208;
     -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: #F5ECD8;
+    color: #1C1208;
   }
 }
