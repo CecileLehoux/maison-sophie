@@ -73,24 +73,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── BANDEAU RÉASSURANCE ── */}
-      <section className="bg-[#1C1208] py-5 px-8">
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-center md:justify-between gap-6 text-center md:text-left">
-          {[
-            { val: "5★", label: "Note Planity" },
-            { val: "Consultation", label: "Gratuite & offerte" },
-            { val: "Technologie", label: "Dernière génération" },
-            { val: "Protocoles", label: "100 % personnalisés" },
-          ].map((item) => (
-            <div key={item.val} className="flex flex-col">
-              <span className="text-[#C9A5A0] text-sm font-medium tracking-wide">{item.val}</span>
-              <span className="text-white/40 text-[10px] tracking-[0.15em] uppercase">{item.label}</span>
-            </div>
-          ))}
-        </div>
-      </section>
 
-      {/* ── PRÉSENTATION SOPHIE ── */}
+{/* ── PRÉSENTATION SOPHIE ── */}
       <section className="bg-[#EAE5DC] py-24 px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Photo */}
