@@ -21,8 +21,8 @@ export const soins: Soin[] = [
     tagline: "Une technologie performante, un protocole sécurisé.",
     excerpt:
       "Réalisée avec un laser diode et la rigueur du milieu paramédical, l'épilation laser chez Maison Sophie offre des résultats durables grâce à un parcours de soin entièrement personnalisé.",
-    image: "/images/photo-4.jpg",
-    heroImage: "/images/photo-4.jpg",
+    image: "/images/soin-laser.jpg",
+    heroImage: "/images/soin-laser.jpg",
     color: "#C9A5A0",
     intro:
       "Chez Maison Sophie, l'épilation laser est réalisée avec un laser diode, une technologie reconnue pour son efficacité dans la réduction durable de la pilosité. Chaque séance est réalisée avec la rigueur issue du milieu paramédical : analyse de la peau, réglages adaptés et respect de protocoles stricts. Chaque peau et chaque pilosité sont différentes — c'est pourquoi l'épilation laser chez Maison Sophie repose sur un parcours de soin personnalisé.",
@@ -103,8 +103,8 @@ export const soins: Soin[] = [
     tagline: "La lumière au service de votre peau.",
     excerpt:
       "La photobiomodulation LED stimule les mécanismes naturels de la peau. Développée et fabriquée à Toulouse, la technologie EstheLED agit en douceur pour régénérer, apaiser et illuminer.",
-    image: "/images/photo-2.jpg",
-    heroImage: "/images/photo-2.jpg",
+    image: "/images/soin-estheled.jpg",
+    heroImage: "/images/soin-estheled.jpg",
     color: "#44b4e7",
     intro:
       "Chez Maison Sophie, les soins LED reposent sur la photobiomodulation, une technologie avancée qui utilise la lumière pour stimuler les mécanismes naturels de la peau. La technologie EstheLED, développée et fabriquée à Toulouse, diffuse différentes longueurs d'onde lumineuses qui agissent directement au cœur des cellules. Contrairement aux technologies chauffantes, la LED agit en douceur et sans agresser la peau, en stimulant les processus naturels de régénération.",
@@ -185,8 +185,8 @@ export const soins: Soin[] = [
     tagline: "Stimuler la circulation, favoriser la récupération.",
     excerpt:
       "La pressothérapie utilise des pressions séquentielles pour stimuler la circulation sanguine et lymphatique. Résultat immédiat : une sensation de légèreté et de détente.",
-    image: "/images/photo-5.jpg",
-    heroImage: "/images/photo-5.jpg",
+    image: "/images/soin-pressotherapie.jpg",
+    heroImage: "/images/soin-pressotherapie.jpg",
     color: "#C9A5A0",
     intro:
       "La pressothérapie est une technique de drainage mécanique qui utilise un système de pressions séquentielles pour stimuler la circulation sanguine et lymphatique. Des bottes ou manchons se gonflent et se dégonflent successivement afin de reproduire l'effet d'un drainage, favorisant ainsi le retour veineux et l'élimination des liquides. Ce soin procure une sensation immédiate de légèreté et de détente.",
@@ -267,8 +267,8 @@ export const soins: Soin[] = [
     tagline: "Optimiser la récupération et le confort musculaire.",
     excerpt:
       "Des protocoles conçus pour accompagner le corps dans la récupération et favoriser le bien-être musculaire, pour les sportifs réguliers comme pour les personnes actives.",
-    image: "/images/photo-6.jpg",
-    heroImage: "/images/photo-6.jpg",
+    image: "/images/soin-sportifs.jpg",
+    heroImage: "/images/soin-sportifs.jpg",
     color: "#C9A5A0",
     intro:
       "Chez Maison Sophie, les soins sportifs sont conçus pour accompagner le corps dans la récupération et favoriser le bien-être musculaire. Ils s'adressent aussi bien aux sportifs réguliers, aux coureurs ou aux personnes actives souhaitant améliorer leur récupération et relâcher les tensions accumulées. Ces soins permettent de soutenir les mécanismes naturels du corps après l'effort et d'aider les muscles à retrouver souplesse et confort.",
