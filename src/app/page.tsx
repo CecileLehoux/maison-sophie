@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { soins } from "@/data/soins";
 
 export const metadata: Metadata = {
   title: "Maison Sophie | Centre Technico-Esthétique à Tournefeuille",
@@ -22,48 +23,6 @@ export const metadata: Metadata = {
   },
 };
 
-const soins = [
-  {
-    slug: "laser",
-    icon: "✦",
-    title: "Épilation Laser",
-    tagline: "Une peau lisse, pour toujours.",
-    excerpt:
-      "Dites adieu aux rasoirs et à l'épilation douloureuse. Notre laser de dernière génération offre des résultats durables sur tous les types de peau, en toute sécurité.",
-    image: "/images/photo-4.jpg",
-    color: "#C9A5A0",
-  },
-  {
-    slug: "estheled",
-    icon: "✦",
-    title: "EstheLED",
-    tagline: "La lumière au service de votre peau.",
-    excerpt:
-      "La photobiomodulation LED est une technologie douce et non invasive qui régénère vos cellules en profondeur. Anti-âge, éclat, apaisement : une révolution pour votre peau.",
-    image: "/images/photo-2.jpg",
-    color: "#44b4e7",
-  },
-  {
-    slug: "pressotherapie",
-    icon: "✦",
-    title: "Pressothérapie",
-    tagline: "Des jambes légères, un corps régénéré.",
-    excerpt:
-      "Le drainage par pressothérapie stimule la circulation lymphatique, réduit la cellulite et accélère la récupération sportive. Résultats visibles dès la première séance.",
-    image: "/images/photo-5.jpg",
-    color: "#C9A5A0",
-  },
-  {
-    slug: "sportifs",
-    icon: "✦",
-    title: "Soins Sportifs",
-    tagline: "Performer et récupérer comme un pro.",
-    excerpt:
-      "Des protocoles sur-mesure associant massage, LED et pressothérapie pour préparer votre corps à l'effort, optimiser la récupération et prévenir les blessures.",
-    image: "/images/photo-6.jpg",
-    color: "#C9A5A0",
-  },
-];
 
 export default function HomePage() {
   return (
