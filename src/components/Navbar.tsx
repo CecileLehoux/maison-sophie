@@ -8,6 +8,7 @@ const links = [
   { href: "/", label: "Accueil" },
   { href: "/soins", label: "Nos Soins" },
   { href: "/tarifs", label: "Tarifs" },
+  { href: "/a-propos", label: "À propos" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -30,7 +31,7 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isTransparent
           ? "bg-transparent"
-          : "bg-[#FAF7F2]/95 backdrop-blur-md border-b border-[#E8DDD0]"
+          : "bg-[#EAE5DC]/95 backdrop-blur-md border-b border-[#D4CFC8]"
       }`}
     >
       <div className="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
@@ -46,7 +47,7 @@ export default function Navbar() {
           </span>
           <span
             className={`text-[9px] tracking-[0.3em] uppercase transition-colors duration-500 ${
-              isTransparent ? "text-white/60" : "text-[#8A7D6B]"
+              isTransparent ? "text-white/60" : "text-[#7A7A7A]"
             }`}
           >
             Centre Esthétique · Tournefeuille
@@ -66,7 +67,7 @@ export default function Navbar() {
                     : "text-white/70 hover:text-white"
                   : pathname === l.href
                   ? "text-[#1C1208]"
-                  : "text-[#8A7D6B] hover:text-[#1C1208]"
+                  : "text-[#7A7A7A] hover:text-[#1C1208]"
               }`}
             >
               {l.label}
@@ -79,7 +80,7 @@ export default function Navbar() {
             className={`text-[11px] tracking-[0.18em] uppercase px-6 py-2.5 border transition-all duration-300 ${
               isTransparent
                 ? "border-white/50 text-white hover:bg-white hover:text-[#1C1208]"
-                : "border-[#C8963E] text-[#C8963E] hover:bg-[#C8963E] hover:text-white"
+                : "border-[#C9A5A0] text-[#C9A5A0] hover:bg-[#C9A5A0] hover:text-white"
             }`}
           >
             Prendre RDV
@@ -107,7 +108,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-[#FAF7F2] border-t border-[#E8DDD0] px-8 py-8 flex flex-col gap-6">
+        <div className="md:hidden bg-[#EAE5DC] border-t border-[#D4CFC8] px-8 py-8 flex flex-col gap-6">
           {links.map((l) => (
             <Link
               key={l.href}
@@ -122,7 +123,7 @@ export default function Navbar() {
             href="https://www.planity.com/maison-sophie-31170-tournefeuille"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[11px] tracking-[0.2em] uppercase text-center px-6 py-3 border border-[#C8963E] text-[#C8963E]"
+            className="text-[11px] tracking-[0.2em] uppercase text-center px-6 py-3 border border-[#C9A5A0] text-[#C9A5A0]"
           >
             Prendre RDV
           </a>

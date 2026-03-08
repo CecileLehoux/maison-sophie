@@ -160,8 +160,6 @@ export default function HomePage() {
             >
               Prendre soin<br />autrement.
             </h2>
-
-            {/* Section 1 — Parcours */}
             <div className="space-y-4 text-[#7A7A7A] leading-relaxed text-[15px]">
               <p>
                 Infirmière diplômée d&apos;État pendant plus de 12 ans, j&apos;ai exercé avec passion dans
@@ -171,63 +169,14 @@ export default function HomePage() {
               </p>
               <p>C&apos;est ainsi qu&apos;est née Maison Sophie.</p>
             </div>
-
-            {/* Séparateur */}
-            <div className="my-7 w-12 h-px bg-[#D4CFC8]" />
-
-            {/* Section 2 — Expertise */}
-            <div className="space-y-4">
-              <h3
-                style={{ fontFamily: "var(--font-display)" }}
-                className="text-lg font-light text-[#1C1208]"
+            <div className="mt-8 flex items-center gap-6">
+              <Link
+                href="/a-propos"
+                className="text-[11px] tracking-[0.2em] uppercase text-[#C9A5A0] border-b border-[#C9A5A0] pb-0.5 hover:text-[#A8857F] hover:border-[#A8857F] transition-colors"
               >
-                Une expertise au service de votre peau et de votre bien-être
-              </h3>
-              <ul className="space-y-2">
-                {[
-                  "Une analyse personnalisée de votre peau et de vos besoins",
-                  "Des protocoles adaptés à votre phototype et à votre histoire",
-                  "Des technologies professionnelles de dernière génération",
-                  "Une hygiène et une sécurité irréprochables à chaque séance",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-[14px] text-[#7A7A7A]">
-                    <span className="mt-2 shrink-0 w-1 h-1 rounded-full bg-[#C9A5A0]" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <p className="text-[14px] text-[#7A7A7A] leading-relaxed italic">
-                Chaque prise en charge est personnalisée, car aucune peau et aucun corps ne se ressemblent.
-              </p>
-            </div>
-
-            {/* Séparateur */}
-            <div className="my-7 w-12 h-px bg-[#D4CFC8]" />
-
-            {/* Section 3 — Approche globale */}
-            <div className="space-y-3">
-              <h3
-                style={{ fontFamily: "var(--font-display)" }}
-                className="text-lg font-light text-[#1C1208]"
-              >
-                Une approche globale du soin
-              </h3>
-              <p className="text-[14px] text-[#7A7A7A] leading-relaxed">
-                Maison Sophie, c&apos;est un lieu pensé pour prendre soin de votre peau, de votre corps
-                et de votre équilibre global. Mon engagement&nbsp;: vous offrir des soins efficaces,
-                dans un cadre apaisant et bienveillant.
-              </p>
-            </div>
-
-            {/* Closing */}
-            <div className="mt-10 pt-8 border-t border-[#D4CFC8]">
-              <p
-                style={{ fontFamily: "var(--font-display)" }}
-                className="text-xl font-light italic text-[#1C1208]"
-              >
-                Maison Sophie — Un lieu où l&apos;expertise rencontre le bien-être.
-              </p>
-              <p className="mt-3 text-[11px] tracking-[0.2em] uppercase text-[#C9A5A0]">— Sophie, Fondatrice</p>
+                En savoir + →
+              </Link>
+              <p className="text-[11px] tracking-[0.2em] uppercase text-[#7A7A7A]">— Sophie, Fondatrice</p>
             </div>
           </div>
         </div>
