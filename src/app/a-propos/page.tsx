@@ -45,10 +45,10 @@ export default function AProposPage() {
 
       {/* ── Biographie ── */}
       <section className="bg-[#EAE5DC] py-20 px-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-12 items-start">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12 items-start">
 
           {/* Photo */}
-          <div className="relative sticky top-28 pb-10 pr-10 lg:pb-14 lg:pr-14 w-72 lg:w-80 mx-auto lg:mx-0">
+          <div className="relative sticky top-28 pb-10 pr-10 lg:pb-14 lg:pr-14 mx-auto lg:mx-0 w-full max-w-xs">
             {/* Bloc rose poudré décalé en bas à droite */}
             <div className="absolute bottom-0 right-0 w-[80%] h-[70%] bg-[#C9A5A0]/20" />
             {/* Photo */}
