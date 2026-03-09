@@ -37,20 +37,20 @@ export default function HomePage() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/35" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-8 pb-20 w-full">
-          <p className="text-[10px] tracking-[0.4em] uppercase text-white/60 mb-4">
+          <p className="text-[10px] tracking-[0.4em] uppercase text-white/70 mb-4">
             Tournefeuille · Centre Technico-Esthétique
           </p>
           <h1
-            style={{ fontFamily: "var(--font-display)" }}
+            style={{ fontFamily: "var(--font-display)", textShadow: "0 2px 30px rgba(0,0,0,0.5)" }}
             className="text-6xl md:text-8xl font-light text-white leading-[1.05] mb-6 max-w-3xl"
           >
             L&apos;esthétique<br />
             <em className="not-italic text-[#8A9E7A]">autrement.</em>
           </h1>
-          <p className="text-base text-white/70 max-w-lg mb-10 leading-relaxed">
+          <p className="text-base text-white/80 max-w-lg mb-10 leading-relaxed" style={{ textShadow: "0 1px 15px rgba(0,0,0,0.5)" }}>
             Des technologies innovantes, une expertise au service de votre bien-être.
             Des résultats durables, personnalisés pour chaque corps.
           </p>
