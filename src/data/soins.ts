@@ -92,7 +92,7 @@ export const soins: Soin[] = [
       },
       {
         q: "Peut-on traiter toutes les zones du corps ?",
-        a: "Oui — aisselles, bras, jambes, maillot, dos, torse, visage... Nous traitons la grande majorité des zones avec des paramètres ajustés selon la sensibilité et la pilosité de chaque zone.",
+        a: "Oui — aisselles, bras, jambes, maillot, dos, torse... Nous traitons la grande majorité des zones avec des paramètres ajustés selon la sensibilité et la pilosité de chaque zone.",
       },
     ],
     cta: "Réserver ma consultation laser gratuite",
