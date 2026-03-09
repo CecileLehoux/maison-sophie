@@ -144,7 +144,7 @@ export const soins: Soin[] = [
       {
         step: "03",
         title: "Une technologie douce et polyvalente",
-        desc: "La photobiomodulation est un soin non invasif, indolore et sans éviction sociale. Elle peut être réalisée sur le visage, le dos, le cuir chevelu et certaines zones du corps.",
+        desc: "La photobiomodulation est un soin non invasif, indolore et sans éviction sociale. Elle peut être réalisée sur le visage, le corps (dos, jambes, abdomen) et le cuir chevelu.",
       },
       {
         step: "04",
