@@ -278,8 +278,8 @@ export default async function SoinDetailPage({
             <em className="text-[#C9A5A0]">est gratuite.</em>
           </h2>
           <p className="text-[#7A7A7A] text-sm leading-relaxed mb-10 max-w-sm mx-auto">
-            Pas d&apos;engagement, pas de surprise. Sophie prend le temps de
-            comprendre vos besoins avant de vous proposer quoi que ce soit.
+            Consultation offerte et sans engagement afin d&apos;analyser vos besoins
+            et vous orienter vers la technologie la plus adaptée.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
             <a

@@ -157,8 +157,8 @@ export default function AProposPage() {
             <em className="text-white/60">est gratuite.</em>
           </h2>
           <p className="text-white/50 text-sm leading-relaxed mb-10 max-w-md mx-auto">
-            Pas d&apos;engagement, pas de surprise. Sophie prend le temps de comprendre vos besoins
-            avant de vous proposer quoi que ce soit.
+            Consultation offerte et sans engagement afin d&apos;analyser vos besoins
+            et vous orienter vers la technologie la plus adaptée.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
