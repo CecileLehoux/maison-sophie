@@ -48,7 +48,7 @@ export default function AProposPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12 items-start">
 
           {/* Photo */}
-          <div className="relative sticky top-28 pb-10 pr-10 lg:pb-14 lg:pr-14 mx-auto lg:mx-0 w-full max-w-xs">
+          <div className="relative lg:sticky lg:top-28 pb-10 pr-10 lg:pb-14 lg:pr-14 mx-auto lg:mx-0 w-full max-w-xs">
             {/* Bloc rose poudré décalé en bas à droite */}
             <div className="absolute bottom-0 right-0 w-[80%] h-[70%] bg-[#C9A5A0]/20" />
             {/* Photo */}
