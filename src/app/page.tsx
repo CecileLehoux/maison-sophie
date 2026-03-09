@@ -28,7 +28,7 @@ export default function HomePage() {
   return (
     <main>
       {/* ── HERO ── */}
-      <section className="relative h-screen min-h-[680px] flex items-end">
+      <section className="relative h-[100svh] min-h-[680px] flex items-end overflow-hidden isolate">
         <Image
           src="/images/hero-banner.jpg"
           alt="Maison Sophie — Centre Technico-Esthétique à Tournefeuille"
