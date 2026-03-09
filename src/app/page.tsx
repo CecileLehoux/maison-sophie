@@ -48,7 +48,7 @@ export default function HomePage() {
             className="text-6xl md:text-8xl font-light text-white leading-[1.05] mb-6 max-w-3xl"
           >
             L&apos;esthétique<br />
-            <em className="not-italic text-[#8A9E7A]">autrement.</em>
+            <em className="not-italic text-[#C9A5A0]">autrement.</em>
           </h1>
           <p className="text-base text-white/80 max-w-lg mb-10 leading-relaxed" style={{ textShadow: "0 1px 15px rgba(0,0,0,0.5)" }}>
             Des technologies innovantes, une expertise au service de votre bien-être.
