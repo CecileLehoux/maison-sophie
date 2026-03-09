@@ -120,7 +120,7 @@ const categories: Category[] = [
     icon: "🏅",
     title: "Soins Sportifs",
     subtitle: "Récupération, performance, mobilité",
-    color: "#68D391",
+    color: "#C9A5A0",
     services: [
       {
         name: "Récupération Express",
@@ -159,13 +159,13 @@ export default function ServicesPage() {
   return (
     <main className="pt-16">
       {/* Hero section */}
-      <section className="bg-[#F9F5F0] py-20 px-6 text-center">
-        <p className="text-xs tracking-[0.3em] uppercase text-[#C49A6C] mb-4">
+      <section className="bg-[#EAE5DC] py-20 px-6 text-center">
+        <p className="text-xs tracking-[0.3em] uppercase text-[#C9A5A0] mb-4">
           Maison Sophie · Tournefeuille
         </p>
         <h1
           style={{ fontFamily: "var(--font-display)" }}
-          className="text-5xl md:text-6xl font-light text-[#2D2D2D] mb-4"
+          className="text-5xl md:text-6xl font-light text-[#1C1208] mb-4"
         >
           Soins & Tarifs
         </h1>
@@ -177,14 +177,14 @@ export default function ServicesPage() {
           href={RDV_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-8 inline-block px-8 py-3.5 bg-[#C49A6C] text-white text-sm tracking-wide rounded-full hover:bg-[#A07848] transition-colors"
+          className="mt-8 inline-block px-8 py-3.5 bg-[#C9A5A0] text-white text-sm tracking-wide rounded-full hover:bg-[#A8857F] transition-colors"
         >
           Prendre rendez-vous
         </a>
       </section>
 
       {/* Nav ancres */}
-      <nav className="sticky top-16 z-30 bg-white border-b border-[#F0EAE2] overflow-x-auto">
+      <nav className="sticky top-16 z-30 bg-white border-b border-[#D4CFC8] overflow-x-auto">
         <div className="max-w-6xl mx-auto px-6 flex gap-1 py-2 whitespace-nowrap">
           {[
             { id: "laser", label: "⚡️ Laser" },
@@ -196,7 +196,7 @@ export default function ServicesPage() {
             <a
               key={item.id}
               href={`#${item.id}`}
-              className="px-4 py-2 text-sm text-[#7A7A7A] hover:text-[#2D2D2D] hover:bg-[#F9F5F0] rounded-full transition-colors"
+              className="px-4 py-2 text-sm text-[#7A7A7A] hover:text-[#1C1208] hover:bg-[#EAE5DC] rounded-full transition-colors"
             >
               {item.label}
             </a>
@@ -219,7 +219,7 @@ export default function ServicesPage() {
               <div>
                 <h2
                   style={{ fontFamily: "var(--font-display)" }}
-                  className="text-3xl font-light text-[#2D2D2D]"
+                  className="text-3xl font-light text-[#1C1208]"
                 >
                   {cat.title}
                 </h2>
@@ -229,27 +229,27 @@ export default function ServicesPage() {
 
             {/* Note importante */}
             {cat.note && (
-              <div className="mb-6 p-4 rounded-xl bg-[#F9F5F0] border-l-4 border-[#C49A6C] text-sm text-[#7A7A7A]">
+              <div className="mb-6 p-4 rounded-xl bg-[#EAE5DC] border-l-4 border-[#C9A5A0] text-sm text-[#7A7A7A]">
                 ℹ️ {cat.note}
               </div>
             )}
 
             {/* Tableau des prestations */}
-            <div className="divide-y divide-[#F0EAE2] border border-[#F0EAE2] rounded-2xl overflow-hidden">
+            <div className="divide-y divide-[#D4CFC8] border border-[#D4CFC8] rounded-2xl overflow-hidden">
               {cat.services.map((s) => (
                 <div
                   key={s.name}
-                  className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 px-6 py-4 hover:bg-[#F9F5F0] transition-colors"
+                  className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 px-6 py-4 hover:bg-[#EAE5DC] transition-colors"
                 >
                   <div className="flex-1">
-                    <p className="text-sm font-medium text-[#2D2D2D]">{s.name}</p>
+                    <p className="text-sm font-medium text-[#1C1208]">{s.name}</p>
                     {s.desc && <p className="text-xs text-[#7A7A7A] mt-0.5">{s.desc}</p>}
                   </div>
                   <div className="flex items-center gap-6 shrink-0">
                     <span className="text-xs text-[#7A7A7A]">{s.duration}</span>
                     <span
                       className="text-sm font-medium min-w-[60px] text-right"
-                      style={{ color: s.price === "Gratuit" ? "#68D391" : "#2D2D2D" }}
+                      style={{ color: s.price === "Gratuit" ? "#C9A5A0" : "#1C1208" }}
                     >
                       {s.price}
                     </span>
@@ -262,7 +262,7 @@ export default function ServicesPage() {
       </div>
 
       {/* CTA */}
-      <section className="bg-[#2D2D2D] py-16 px-6 text-white text-center">
+      <section className="bg-[#1C1208] py-16 px-6 text-white text-center">
         <h2
           style={{ fontFamily: "var(--font-display)" }}
           className="text-4xl font-light mb-4"
@@ -277,7 +277,7 @@ export default function ServicesPage() {
             href={RDV_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-3.5 bg-[#C49A6C] text-white text-sm tracking-wide rounded-full hover:bg-[#A07848] transition-colors"
+            className="px-8 py-3.5 bg-[#C9A5A0] text-white text-sm tracking-wide rounded-full hover:bg-[#A8857F] transition-colors"
           >
             Réserver en ligne
           </a>

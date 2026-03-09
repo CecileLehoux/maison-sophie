@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import { Raleway, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const cormorant = Cormorant_Garamond({
+const raleway = Raleway({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["300", "400", "600", "700"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -125,7 +126,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${cormorant.variable} ${dmSans.variable}`}
+        className={`${raleway.variable} ${dmSans.variable}`}
         style={{ fontFamily: "var(--font-body)" }}
       >
         <Navbar />

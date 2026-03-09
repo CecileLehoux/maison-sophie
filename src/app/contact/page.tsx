@@ -36,13 +36,13 @@ export default function ContactPage() {
   return (
     <main className="pt-16">
       {/* Hero */}
-      <section className="bg-[#F9F5F0] py-20 px-6 text-center">
-        <p className="text-xs tracking-[0.3em] uppercase text-[#C49A6C] mb-4">
+      <section className="bg-[#EAE5DC] py-20 px-6 text-center">
+        <p className="text-xs tracking-[0.3em] uppercase text-[#C9A5A0] mb-4">
           Nous trouver
         </p>
         <h1
           style={{ fontFamily: "var(--font-display)" }}
-          className="text-5xl md:text-6xl font-light text-[#2D2D2D] mb-4"
+          className="text-5xl md:text-6xl font-light text-[#1C1208] mb-4"
         >
           Contact & Accès
         </h1>
@@ -58,17 +58,17 @@ export default function ContactPage() {
           <div>
             <h2
               style={{ fontFamily: "var(--font-display)" }}
-              className="text-2xl font-light text-[#2D2D2D] mb-4"
+              className="text-2xl font-light text-[#1C1208] mb-4"
             >
               Où nous trouver
             </h2>
             <div className="space-y-2 text-[#7A7A7A]">
-              <p className="text-[#2D2D2D] font-medium">Maison Sophie</p>
+              <p className="text-[#1C1208] font-medium">Maison Sophie</p>
               <p>122, Avenue du Marquisat</p>
               <p>31170 Tournefeuille</p>
               <a
                 href="tel:+33617805053"
-                className="block mt-3 text-[#C49A6C] hover:text-[#A07848] transition-colors font-medium"
+                className="block mt-3 text-[#C9A5A0] hover:text-[#A8857F] transition-colors font-medium"
               >
                 06 17 80 50 53
               </a>
@@ -77,7 +77,7 @@ export default function ContactPage() {
               href="https://maps.google.com/?q=122+Av.+du+Marquisat,+31170+Tournefeuille"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 text-sm text-[#7A7A7A] hover:text-[#2D2D2D] transition-colors"
+              className="mt-4 inline-flex items-center gap-2 text-sm text-[#7A7A7A] hover:text-[#1C1208] transition-colors"
             >
               <span>Voir sur Google Maps</span>
               <span>↗</span>
@@ -88,11 +88,11 @@ export default function ContactPage() {
           <div>
             <h2
               style={{ fontFamily: "var(--font-display)" }}
-              className="text-2xl font-light text-[#2D2D2D] mb-4"
+              className="text-2xl font-light text-[#1C1208] mb-4"
             >
               Horaires d&apos;ouverture
             </h2>
-            <ul className="divide-y divide-[#F0EAE2]">
+            <ul className="divide-y divide-[#D4CFC8]">
               {hours.map((h) => (
                 <li key={h.day} className="flex justify-between py-3 text-sm">
                   <span className="text-[#7A7A7A]">{h.day}</span>
@@ -100,7 +100,7 @@ export default function ContactPage() {
                     className={
                       h.time === "Fermé"
                         ? "text-[#7A7A7A]/50"
-                        : "text-[#2D2D2D] font-medium"
+                        : "text-[#1C1208] font-medium"
                     }
                   >
                     {h.time}
@@ -111,10 +111,10 @@ export default function ContactPage() {
           </div>
 
           {/* RDV */}
-          <div className="p-6 bg-[#F9F5F0] rounded-2xl">
+          <div className="p-6 bg-[#EAE5DC] rounded-2xl">
             <h3
               style={{ fontFamily: "var(--font-display)" }}
-              className="text-xl font-light text-[#2D2D2D] mb-2"
+              className="text-xl font-light text-[#1C1208] mb-2"
             >
               Prise de rendez-vous
             </h3>
@@ -127,7 +127,7 @@ export default function ContactPage() {
               href={RDV_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-6 py-3 bg-[#C49A6C] text-white text-sm tracking-wide rounded-full hover:bg-[#A07848] transition-colors"
+              className="inline-block px-6 py-3 bg-[#C9A5A0] text-white text-sm tracking-wide rounded-full hover:bg-[#A8857F] transition-colors"
             >
               Réserver en ligne
             </a>
@@ -135,7 +135,7 @@ export default function ContactPage() {
         </div>
 
         {/* Carte Google Maps */}
-        <div className="rounded-2xl overflow-hidden border border-[#F0EAE2] min-h-[400px] lg:min-h-0">
+        <div className="rounded-2xl overflow-hidden border border-[#D4CFC8] min-h-[400px] lg:min-h-0">
           <iframe
             title="Localisation Maison Sophie — 122 Av. du Marquisat, Tournefeuille"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.0!2d1.350462!3d43.5770367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDM0JzM3LjMiTiAxwrAyMScwMS43IkU!5e0!3m2!1sfr!2sfr!4v1"

@@ -59,7 +59,7 @@ export default function Footer() {
       </div>
 
       {/* Gold divider */}
-      <div className="border-t border-[#C8963E]/20 max-w-7xl mx-auto px-8 py-5 flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/25">
+      <div className="border-t border-[#C9A5A0]/20 max-w-7xl mx-auto px-8 py-5 flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/25">
         <p>© {new Date().getFullYear()} Maison Sophie. Tous droits réservés.</p>
         <div className="flex gap-6">
           <Link href="/mentions-legales" className="hover:text-white/50 transition-colors">

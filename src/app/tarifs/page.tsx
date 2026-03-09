@@ -39,7 +39,7 @@ const categories: Category[] = [
     id: "laser",
     title: "Épilation Laser",
     subtitle: "Femme & Homme — Résultats durables",
-    color: "#C8963E",
+    color: "#C9A5A0",
     soinSlug: "laser",
     note: "Consultation gratuite et obligatoire avant la première séance. Réductions : -20% pour 2 zones, -30% pour 3 zones.",
     services: [
@@ -66,7 +66,7 @@ const categories: Category[] = [
     id: "laser-multi",
     title: "Laser — Forfaits multi-zones",
     subtitle: "Combinaisons populaires avec réduction",
-    color: "#C8963E",
+    color: "#C9A5A0",
     soinSlug: "laser",
     services: [
       { name: "Maillot simple + aisselles", price: "100 €", duration: "30 min" },
@@ -116,7 +116,7 @@ const categories: Category[] = [
     id: "pressotherapie",
     title: "Pressothérapie",
     subtitle: "Drainage, circulation, récupération sportive",
-    color: "#8BA888",
+    color: "#C9A5A0",
     soinSlug: "pressotherapie",
     services: [
       { name: "Séance à l'unité", price: "25 €", duration: "30 min" },
@@ -127,7 +127,7 @@ const categories: Category[] = [
     id: "sportifs",
     title: "Soins Sportifs",
     subtitle: "Récupération, performance, mobilité",
-    color: "#C8963E",
+    color: "#C9A5A0",
     soinSlug: "sportifs",
     services: [
       {
@@ -154,7 +154,7 @@ const categories: Category[] = [
     id: "massages",
     title: "Massages",
     subtitle: "Détente musculaire ciblée",
-    color: "#C8963E",
+    color: "#C9A5A0",
     services: [
       { name: "Massage sportif du dos", price: "50 €", duration: "45 min" },
       { name: "Massage sportif des jambes", price: "50 €", duration: "45 min" },
@@ -175,16 +175,16 @@ export default function TarifsPage() {
   return (
     <main className="pt-20">
       {/* ── Header ────────────────────────────────────────────── */}
-      <section className="bg-[#F2EDE4] py-20 px-8">
+      <section className="bg-[#E2DCD3] py-20 px-8">
         <div className="max-w-7xl mx-auto">
-          <p className="text-[10px] tracking-[0.4em] uppercase text-[#C8963E] mb-4">Maison Sophie</p>
+          <p className="text-[10px] tracking-[0.4em] uppercase text-[#C9A5A0] mb-4">Maison Sophie</p>
           <h1
             style={{ fontFamily: "var(--font-display)" }}
             className="text-6xl md:text-7xl font-light text-[#1C1208] leading-tight max-w-2xl"
           >
             Nos tarifs
           </h1>
-          <p className="mt-6 text-[#8A7D6B] max-w-xl leading-relaxed">
+          <p className="mt-6 text-[#7A7A7A] max-w-xl leading-relaxed">
             Chaque soin commence par une consultation gratuite. Les tarifs ci-dessous
             sont indicatifs — le protocole final est toujours défini ensemble lors du premier rendez-vous.
           </p>
@@ -193,13 +193,13 @@ export default function TarifsPage() {
               href={RDV_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-3.5 border border-[#C8963E] text-[#C8963E] text-[11px] tracking-[0.2em] uppercase hover:bg-[#C8963E] hover:text-white transition-all duration-300"
+              className="inline-block px-8 py-3.5 border border-[#C9A5A0] text-[#C9A5A0] text-[11px] tracking-[0.2em] uppercase hover:bg-[#C9A5A0] hover:text-white transition-all duration-300"
             >
               Prendre rendez-vous
             </a>
             <Link
               href="/soins"
-              className="inline-block px-8 py-3.5 border border-[#1C1208]/20 text-[#8A7D6B] text-[11px] tracking-[0.2em] uppercase hover:border-[#1C1208] hover:text-[#1C1208] transition-all duration-300"
+              className="inline-block px-8 py-3.5 border border-[#1C1208]/20 text-[#7A7A7A] text-[11px] tracking-[0.2em] uppercase hover:border-[#1C1208] hover:text-[#1C1208] transition-all duration-300"
             >
               Découvrir nos soins
             </Link>
@@ -211,14 +211,14 @@ export default function TarifsPage() {
       <div className="bg-[#1C1208] px-8 py-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-3">
-            <span className="text-[#C8963E] text-lg">✦</span>
+            <span className="text-[#C9A5A0] text-lg">✦</span>
             <p className="text-white/70 text-[12px] leading-relaxed">
               La consultation de diagnostic est <strong className="text-white">100 % gratuite</strong> et sans engagement avant toute première séance laser ou EstheLED.
             </p>
           </div>
           <a
             href={`tel:+33617805053`}
-            className="text-[#C8963E] text-[11px] tracking-[0.15em] uppercase whitespace-nowrap hover:text-white transition-colors"
+            className="text-[#C9A5A0] text-[11px] tracking-[0.15em] uppercase whitespace-nowrap hover:text-white transition-colors"
           >
             06 17 80 50 53
           </a>
@@ -226,13 +226,13 @@ export default function TarifsPage() {
       </div>
 
       {/* ── Nav ancres ────────────────────────────────────────── */}
-      <nav className="sticky top-20 z-30 bg-[#FAF7F2] border-b border-[#E8DDD0] overflow-x-auto">
+      <nav className="sticky top-20 z-30 bg-[#EAE5DC] border-b border-[#D4CFC8] overflow-x-auto">
         <div className="max-w-7xl mx-auto px-8 flex gap-1 py-2 whitespace-nowrap">
           {navAnchors.map((item) => (
             <a
               key={item.id}
               href={`#${item.id}`}
-              className="px-5 py-2 text-[11px] tracking-[0.1em] uppercase text-[#8A7D6B] hover:text-[#1C1208] hover:bg-[#F2EDE4] rounded transition-colors"
+              className="px-5 py-2 text-[11px] tracking-[0.1em] uppercase text-[#7A7A7A] hover:text-[#1C1208] hover:bg-[#E2DCD3] rounded transition-colors"
             >
               {item.label}
             </a>
@@ -249,7 +249,7 @@ export default function TarifsPage() {
               <div>
                 <div className="flex items-center gap-3 mb-2">
                   <span className="block w-4 h-px" style={{ backgroundColor: cat.color }} />
-                  <span className="text-[10px] tracking-[0.3em] uppercase text-[#8A7D6B]">
+                  <span className="text-[10px] tracking-[0.3em] uppercase text-[#7A7A7A]">
                     {cat.subtitle}
                   </span>
                 </div>
@@ -263,7 +263,7 @@ export default function TarifsPage() {
               {cat.soinSlug && (
                 <Link
                   href={`/soins/${cat.soinSlug}`}
-                  className="text-[11px] tracking-[0.15em] uppercase text-[#8A7D6B] hover:text-[#C8963E] transition-colors whitespace-nowrap"
+                  className="text-[11px] tracking-[0.15em] uppercase text-[#7A7A7A] hover:text-[#C9A5A0] transition-colors whitespace-nowrap"
                 >
                   En savoir plus →
                 </Link>
@@ -273,7 +273,7 @@ export default function TarifsPage() {
             {/* Note */}
             {cat.note && (
               <div
-                className="mb-6 p-5 border-l-2 text-[13px] text-[#8A7D6B] leading-relaxed"
+                className="mb-6 p-5 border-l-2 text-[13px] text-[#7A7A7A] leading-relaxed"
                 style={{ borderColor: cat.color, backgroundColor: `${cat.color}08` }}
               >
                 {cat.note}
@@ -281,23 +281,23 @@ export default function TarifsPage() {
             )}
 
             {/* Tableau des prestations */}
-            <div className="border border-[#E8DDD0] overflow-hidden">
+            <div className="border border-[#D4CFC8] overflow-hidden">
               {cat.services.map((s, idx) => (
                 <div
                   key={idx}
-                  className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 px-7 py-5 border-b border-[#E8DDD0] last:border-0 hover:bg-[#F2EDE4] transition-colors"
+                  className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 px-7 py-5 border-b border-[#D4CFC8] last:border-0 hover:bg-[#E2DCD3] transition-colors"
                 >
                   <div className="flex-1">
                     <p className="text-[14px] text-[#1C1208] font-medium">{s.name}</p>
                     {s.desc && (
-                      <p className="text-[12px] text-[#8A7D6B] mt-1 italic">{s.desc}</p>
+                      <p className="text-[12px] text-[#7A7A7A] mt-1 italic">{s.desc}</p>
                     )}
                   </div>
                   <div className="flex items-center gap-8 shrink-0">
-                    <span className="text-[12px] text-[#8A7D6B]">{s.duration}</span>
+                    <span className="text-[12px] text-[#7A7A7A]">{s.duration}</span>
                     <span
                       className="text-[14px] font-medium min-w-[70px] text-right"
-                      style={{ color: s.price === "Gratuit" ? "#8BA888" : "#1C1208" }}
+                      style={{ color: s.price === "Gratuit" ? "#C9A5A0" : "#1C1208" }}
                     >
                       {s.price}
                     </span>
@@ -312,7 +312,7 @@ export default function TarifsPage() {
       {/* ── CTA Final ─────────────────────────────────────────── */}
       <section className="bg-[#1C1208] py-24 px-8 text-center">
         <div className="max-w-xl mx-auto">
-          <p className="text-[10px] tracking-[0.4em] uppercase text-[#C8963E] mb-6">Réserver</p>
+          <p className="text-[10px] tracking-[0.4em] uppercase text-[#C9A5A0] mb-6">Réserver</p>
           <h2
             style={{ fontFamily: "var(--font-display)" }}
             className="text-4xl md:text-5xl font-light text-white mb-6"
@@ -329,7 +329,7 @@ export default function TarifsPage() {
               href={RDV_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-10 py-4 border border-[#C8963E] text-[#C8963E] text-[11px] tracking-[0.2em] uppercase hover:bg-[#C8963E] hover:text-white transition-all"
+              className="px-10 py-4 border border-[#C9A5A0] text-[#C9A5A0] text-[11px] tracking-[0.2em] uppercase hover:bg-[#C9A5A0] hover:text-white transition-all"
             >
               Prendre rendez-vous
             </a>
