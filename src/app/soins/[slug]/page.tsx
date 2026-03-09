@@ -51,91 +51,96 @@ export default async function SoinDetailPage({
 
   return (
     <main>
-      {/* ── Hero plein écran ───────────────────────────────────── */}
-      <section className="relative h-[70vh] min-h-[500px] flex items-end overflow-hidden">
+
+      {/* ── Hero ─────────────────────────────────────────────────── */}
+      <section className="relative h-[85vh] min-h-[560px] overflow-hidden">
         <Image
           src={soin.heroImage}
           alt={soin.title}
           fill
           priority
-          className="object-cover"
+          className="object-cover object-top"
           sizes="100vw"
         />
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1C1208]/80 via-[#1C1208]/30 to-transparent" />
+        {/* Dégradé bas → haut pour lisibilité du titre */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" />
 
         {/* Breadcrumb */}
-        <div className="absolute top-24 left-8 flex items-center gap-2 text-white/60 text-[10px] tracking-[0.3em] uppercase">
+        <div className="absolute top-24 left-8 flex items-center gap-2 text-white/50 text-[10px] tracking-[0.3em] uppercase">
           <Link href="/" className="hover:text-white transition-colors">Accueil</Link>
           <span>/</span>
           <Link href="/soins" className="hover:text-white transition-colors">Nos Soins</Link>
           <span>/</span>
-          <span className="text-white">{soin.title}</span>
+          <span className="text-white/80">{soin.title}</span>
         </div>
 
-        {/* Hero content */}
-        <div className="relative z-10 px-8 pb-16 max-w-7xl mx-auto w-full">
-          <p className="text-[10px] tracking-[0.4em] uppercase mb-3" style={{ color: soin.color }}>
-            Maison Sophie
+        {/* Titre — centré verticalement */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8 pb-12">
+          <p className="text-[10px] tracking-[0.5em] uppercase text-white/60 mb-5">
+            Maison Sophie · Tournefeuille
           </p>
           <h1
             style={{ fontFamily: "var(--font-display)" }}
-            className="text-5xl md:text-7xl font-light text-white leading-tight max-w-2xl"
+            className="text-5xl md:text-7xl lg:text-8xl font-light text-white leading-tight max-w-3xl"
           >
             {soin.title}
           </h1>
+          <div className="mt-6 w-12 h-px bg-white/30" />
           <p
             style={{ fontFamily: "var(--font-display)" }}
-            className="text-xl md:text-2xl italic mt-3 text-white/70"
+            className="text-lg md:text-xl italic mt-5 text-white/65 max-w-xl"
           >
             {soin.tagline}
           </p>
         </div>
       </section>
 
-      {/* ── Intro ─────────────────────────────────────────────── */}
-      <section className="bg-[#FAF7F2] py-20 px-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      {/* ── Intro ─────────────────────────────────────────────────── */}
+      <section className="bg-white py-24 px-8">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-16 items-start">
+
+          {/* Texte principal */}
           <div>
-            <p className="text-[10px] tracking-[0.4em] uppercase text-[#C8963E] mb-5">Le soin</p>
+            <p className="text-[10px] tracking-[0.5em] uppercase text-[#C9A5A0] mb-6">
+              Le soin
+            </p>
             <h2
               style={{ fontFamily: "var(--font-display)" }}
-              className="text-4xl font-light text-[#1C1208] leading-tight mb-6"
+              className="text-4xl md:text-5xl font-light text-[#1C1208] leading-tight mb-8"
             >
-              Ce qu&apos;est<br />
-              <em>{soin.title}</em>
+              {soin.title}
             </h2>
-            <p className="text-[#8A7D6B] leading-relaxed text-[15px]">{soin.intro}</p>
-            <div className="mt-8 flex items-center gap-4">
+            <p className="text-[#7A7A7A] leading-relaxed text-[15px] max-w-xl">
+              {soin.intro}
+            </p>
+            <div className="mt-10 flex flex-wrap items-center gap-4">
               <a
                 href={RDV_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-8 py-3.5 border border-[#C8963E] text-[#C8963E] text-[11px] tracking-[0.2em] uppercase hover:bg-[#C8963E] hover:text-white transition-all duration-300"
+                className="inline-block px-9 py-3.5 bg-[#C9A5A0] text-white text-[11px] tracking-[0.2em] uppercase hover:bg-[#A8857F] transition-colors duration-300"
               >
                 {soin.cta}
               </a>
               <Link
                 href="/tarifs"
-                className="text-[11px] tracking-[0.15em] uppercase text-[#8A7D6B] hover:text-[#1C1208] transition-colors"
+                className="text-[11px] tracking-[0.15em] uppercase text-[#7A7A7A] hover:text-[#1C1208] transition-colors border-b border-[#D4CFC8] pb-px"
               >
                 Voir les tarifs →
               </Link>
             </div>
           </div>
 
-          {/* Réassurance rapide */}
-          <div className="bg-[#F2EDE4] p-10">
-            <p className="text-[10px] tracking-[0.4em] uppercase text-[#C8963E] mb-6">Nos engagements</p>
-            <ul className="space-y-4">
+          {/* Engagements — barre latérale */}
+          <div className="border-l border-[#D4CFC8] pl-10 pt-1">
+            <p className="text-[10px] tracking-[0.5em] uppercase text-[#C9A5A0] mb-7">
+              Nos engagements
+            </p>
+            <ul className="space-y-5">
               {soin.reassurance.map((item, i) => (
-                <li key={i} className="flex items-start gap-4">
-                  <span className="mt-1 shrink-0 w-5 h-5 rounded-full border border-[#C8963E] flex items-center justify-center">
-                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
-                      <path d="M1 4L3.5 6.5L9 1" stroke="#C8963E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </span>
-                  <span className="text-[13px] text-[#8A7D6B] leading-relaxed">{item}</span>
+                <li key={i} className="flex items-start gap-3">
+                  <span className="mt-1 shrink-0 text-[#C9A5A0] text-sm leading-none">—</span>
+                  <span className="text-[13px] text-[#7A7A7A] leading-relaxed">{item}</span>
                 </li>
               ))}
             </ul>
@@ -143,41 +148,47 @@ export default async function SoinDetailPage({
         </div>
       </section>
 
-      {/* ── Bénéfices ─────────────────────────────────────────── */}
-      <section className="bg-[#1C1208] py-20 px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-14">
-            <p className="text-[10px] tracking-[0.4em] uppercase text-[#C8963E] mb-4">Les atouts</p>
+      {/* ── Bénéfices ─────────────────────────────────────────────── */}
+      <section className="bg-[#EAE5DC] py-24 px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-16">
+            <p className="text-[10px] tracking-[0.5em] uppercase text-[#C9A5A0] mb-4">
+              Les atouts
+            </p>
             <h2
               style={{ fontFamily: "var(--font-display)" }}
-              className="text-4xl md:text-5xl font-light text-white"
+              className="text-4xl md:text-5xl font-light text-[#1C1208]"
             >
               Pourquoi choisir<br />
-              <em style={{ color: soin.color }}>{soin.title}</em>&nbsp;?
+              <em>{soin.title}&nbsp;?</em>
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10">
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {soin.benefits.map((b, i) => (
-              <div key={i} className="bg-[#1C1208] p-8 flex flex-col gap-4">
-                <span className="text-2xl" style={{ color: soin.color }}>{b.icon}</span>
+              <div key={i} className="flex flex-col gap-4">
+                <span className="text-3xl">{b.icon}</span>
                 <h3
                   style={{ fontFamily: "var(--font-display)" }}
-                  className="text-xl font-light text-white"
+                  className="text-xl font-light text-[#1C1208]"
                 >
                   {b.title}
                 </h3>
-                <p className="text-[13px] text-white/50 leading-relaxed">{b.desc}</p>
+                <div className="w-8 h-px bg-[#C9A5A0]" />
+                <p className="text-[13px] text-[#7A7A7A] leading-relaxed">{b.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── Comment ça marche ─────────────────────────────────── */}
-      <section className="bg-[#FAF7F2] py-20 px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-14">
-            <p className="text-[10px] tracking-[0.4em] uppercase text-[#C8963E] mb-4">Le protocole</p>
+      {/* ── Comment ça marche ─────────────────────────────────────── */}
+      <section className="bg-white py-24 px-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="mb-16">
+            <p className="text-[10px] tracking-[0.5em] uppercase text-[#C9A5A0] mb-4">
+              Le protocole
+            </p>
             <h2
               style={{ fontFamily: "var(--font-display)" }}
               className="text-4xl md:text-5xl font-light text-[#1C1208]"
@@ -185,23 +196,29 @@ export default async function SoinDetailPage({
               Comment ça<br />se passe ?
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#E8DDD0]">
+
+          <div>
             {soin.howItWorks.map((step, i) => (
-              <div key={i} className="bg-[#FAF7F2] p-10 flex gap-8">
+              <div
+                key={i}
+                className="flex gap-10 py-10 border-t border-[#EAE5DC]"
+              >
                 <span
                   style={{ fontFamily: "var(--font-display)", color: soin.color }}
-                  className="text-5xl font-light leading-none shrink-0 mt-1 opacity-40"
+                  className="text-6xl font-light leading-none shrink-0 mt-1 opacity-25 select-none"
                 >
                   {step.step}
                 </span>
-                <div>
+                <div className="pt-2">
                   <h3
                     style={{ fontFamily: "var(--font-display)" }}
                     className="text-2xl font-light text-[#1C1208] mb-3"
                   >
                     {step.title}
                   </h3>
-                  <p className="text-[13px] text-[#8A7D6B] leading-relaxed">{step.desc}</p>
+                  <p className="text-[14px] text-[#7A7A7A] leading-relaxed">
+                    {step.desc}
+                  </p>
                 </div>
               </div>
             ))}
@@ -209,11 +226,13 @@ export default async function SoinDetailPage({
         </div>
       </section>
 
-      {/* ── FAQ ───────────────────────────────────────────────── */}
-      <section className="bg-[#F2EDE4] py-20 px-8">
+      {/* ── FAQ ───────────────────────────────────────────────────── */}
+      <section className="bg-[#EAE5DC] py-24 px-8">
         <div className="max-w-3xl mx-auto">
-          <div className="mb-14 text-center">
-            <p className="text-[10px] tracking-[0.4em] uppercase text-[#C8963E] mb-4">Questions fréquentes</p>
+          <div className="mb-14">
+            <p className="text-[10px] tracking-[0.5em] uppercase text-[#C9A5A0] mb-4">
+              Questions fréquentes
+            </p>
             <h2
               style={{ fontFamily: "var(--font-display)" }}
               className="text-4xl font-light text-[#1C1208]"
@@ -221,62 +240,66 @@ export default async function SoinDetailPage({
               Vos questions,<br />nos réponses
             </h2>
           </div>
-          <div className="space-y-px">
+
+          <div className="divide-y divide-[#D4CFC8]">
             {soin.faq.map((item, i) => (
-              <div key={i} className="bg-[#FAF7F2] border border-[#E8DDD0]">
-                <div className="px-8 py-6">
-                  <div className="flex items-start gap-5">
-                    <span
-                      style={{ fontFamily: "var(--font-display)", color: soin.color }}
-                      className="text-2xl font-light shrink-0 mt-0.5"
-                    >
-                      Q.
-                    </span>
-                    <div>
-                      <p className="text-[#1C1208] font-medium text-[14px] mb-3">{item.q}</p>
-                      <p className="text-[13px] text-[#8A7D6B] leading-relaxed">{item.a}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <details key={i} className="group py-1">
+                <summary className="flex items-center justify-between py-5 cursor-pointer list-none gap-6">
+                  <span className="text-[14px] text-[#1C1208] font-medium leading-snug">
+                    {item.q}
+                  </span>
+                  <span className="shrink-0 w-6 h-6 rounded-full border border-[#C9A5A0] flex items-center justify-center text-[#C9A5A0] transition-transform duration-200 group-open:rotate-45">
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                      <path d="M5 0v10M0 5h10" stroke="currentColor" strokeWidth="1.2" />
+                    </svg>
+                  </span>
+                </summary>
+                <p className="pb-6 text-[13px] text-[#7A7A7A] leading-relaxed pr-10">
+                  {item.a}
+                </p>
+              </details>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── CTA final ─────────────────────────────────────────── */}
-      <section className="bg-[#1C1208] py-24 px-8 text-center">
-        <div className="max-w-xl mx-auto">
-          <p className="text-[10px] tracking-[0.4em] uppercase text-[#C8963E] mb-6">Prêt(e) à commencer ?</p>
+      {/* ── CTA final ─────────────────────────────────────────────── */}
+      <section className="bg-white py-28 px-8">
+        <div className="max-w-xl mx-auto text-center">
+          <div className="w-px h-16 bg-[#D4CFC8] mx-auto mb-10" />
+          <p className="text-[10px] tracking-[0.5em] uppercase text-[#C9A5A0] mb-6">
+            Prêt(e) à commencer ?
+          </p>
           <h2
             style={{ fontFamily: "var(--font-display)" }}
-            className="text-4xl md:text-5xl font-light text-white mb-6"
+            className="text-4xl md:text-5xl font-light text-[#1C1208] mb-6 leading-tight"
           >
             La consultation<br />
-            <em className="text-white/60">est gratuite.</em>
+            <em className="text-[#C9A5A0]">est gratuite.</em>
           </h2>
-          <p className="text-white/50 text-sm leading-relaxed mb-10 max-w-md mx-auto">
-            Pas d&apos;engagement, pas de surprise. Sophie prend le temps de comprendre
-            vos besoins avant de vous proposer quoi que ce soit.
+          <p className="text-[#7A7A7A] text-sm leading-relaxed mb-10 max-w-sm mx-auto">
+            Pas d&apos;engagement, pas de surprise. Sophie prend le temps de
+            comprendre vos besoins avant de vous proposer quoi que ce soit.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-3">
             <a
               href={RDV_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-10 py-4 bg-[#C8963E] text-white text-[11px] tracking-[0.2em] uppercase hover:bg-[#A07030] transition-colors"
+              className="px-10 py-4 bg-[#C9A5A0] text-white text-[11px] tracking-[0.2em] uppercase hover:bg-[#A8857F] transition-colors duration-300"
             >
               {soin.cta}
             </a>
             <Link
               href="/soins"
-              className="px-10 py-4 border border-white/20 text-white/60 text-[11px] tracking-[0.2em] uppercase hover:border-white/50 hover:text-white transition-all"
+              className="px-10 py-4 border border-[#D4CFC8] text-[#7A7A7A] text-[11px] tracking-[0.2em] uppercase hover:border-[#C9A5A0] hover:text-[#C9A5A0] transition-all duration-300"
             >
-              Voir tous nos soins
+              Tous nos soins
             </Link>
           </div>
         </div>
       </section>
+
     </main>
   );
 }

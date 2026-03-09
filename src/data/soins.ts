@@ -105,7 +105,7 @@ export const soins: Soin[] = [
       "La photobiomodulation LED stimule les mécanismes naturels de la peau. Développée et fabriquée à Toulouse, la technologie EstheLED agit en douceur pour régénérer, apaiser et illuminer.",
     image: "/images/soin-estheled.jpg",
     heroImage: "/images/soin-estheled.jpg",
-    color: "#44b4e7",
+    color: "#C9A5A0",
     intro:
       "Chez Maison Sophie, les soins LED reposent sur la photobiomodulation, une technologie avancée qui utilise la lumière pour stimuler les mécanismes naturels de la peau. La technologie EstheLED, développée et fabriquée à Toulouse, diffuse différentes longueurs d'onde lumineuses qui agissent directement au cœur des cellules. Contrairement aux technologies chauffantes, la LED agit en douceur et sans agresser la peau, en stimulant les processus naturels de régénération.",
     benefits: [
