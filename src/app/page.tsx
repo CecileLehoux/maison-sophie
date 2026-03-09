@@ -30,11 +30,11 @@ export default function HomePage() {
       {/* ── HERO ── */}
       <section className="relative h-screen min-h-[680px] flex items-end">
         <Image
-          src="/images/hero.jpg"
+          src="/images/hero-banner.jpg"
           alt="Maison Sophie — Centre Technico-Esthétique à Tournefeuille"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-top"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/35" />
