@@ -72,12 +72,13 @@ export default function AProposPage() {
               <p className="text-[10px] tracking-[0.4em] uppercase text-[#C9A5A0] mb-4">Le parcours</p>
               <div className="space-y-4 text-[#7A7A7A] leading-relaxed text-[15px]">
                 <p>
-                  Infirmière diplômée d&apos;État pendant plus de 12 ans, j&apos;ai exercé avec passion dans
-                  le domaine de la santé, où chaque geste compte et chaque détail a son importance.
-                  C&apos;est cette exigence médicale — l&apos;exigence, l&apos;hygiène, la précision, l&apos;écoute —
-                  que j&apos;ai voulu apporter dans le monde de l&apos;esthétique.
+                  Infirmière diplômée d&apos;État depuis plus de 12 ans, j&apos;ai évolué dans le domaine
+                  de la santé, un univers où la rigueur, l&apos;hygiène et la précision sont fondamentales.
                 </p>
-                <p>C&apos;est ainsi qu&apos;est née Maison Sophie.</p>
+                <p>
+                  Avec Maison Sophie, j&apos;ai souhaité transposer cette exigence paramédicale à
+                  l&apos;esthétique, pour proposer une prise en charge attentive, précise et personnalisée.
+                </p>
               </div>
             </div>
 
