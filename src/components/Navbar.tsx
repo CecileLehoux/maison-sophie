@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { soins } from "@/data/soins";
 
@@ -17,6 +17,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [soinsOpen, setSoinsOpen] = useState(false);
   const [soinsOpenMobile, setSoinsOpenMobile] = useState(false);
+  const soinsCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const pathname = usePathname();
   const isHome = pathname === "/";
 
@@ -74,8 +75,13 @@ export default function Navbar() {
           {/* Nos Soins — dropdown */}
           <div
             className="relative"
-            onMouseEnter={() => setSoinsOpen(true)}
-            onMouseLeave={() => setSoinsOpen(false)}
+            onMouseEnter={() => {
+              if (soinsCloseTimer.current) clearTimeout(soinsCloseTimer.current);
+              setSoinsOpen(true);
+            }}
+            onMouseLeave={() => {
+              soinsCloseTimer.current = setTimeout(() => setSoinsOpen(false), 200);
+            }}
           >
             <button
               className={`flex items-center gap-1.5 text-[11px] tracking-[0.18em] uppercase transition-colors duration-300 ${
