@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { soins } from "@/data/soins";
 
+export const dynamic = "force-static";
+
 const BASE_URL = "https://maison-sophie.fr";
 
 export default function sitemap(): MetadataRoute.Sitemap {
