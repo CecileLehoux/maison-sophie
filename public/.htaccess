@@ -1,0 +1,10 @@
+Options -Indexes
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+RewriteBase /
+
+# Servir le .html même si un dossier du même nom existe
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
