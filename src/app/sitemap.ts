@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { soins } from "@/data/soins";
 
-const BASE_URL = "https://maisonsophie.fr";
+const BASE_URL = "https://maison-sophie.fr";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const soinPages: MetadataRoute.Sitemap = soins.map((s) => ({

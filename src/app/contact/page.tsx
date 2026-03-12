@@ -4,12 +4,12 @@ export const metadata: Metadata = {
   title: "Contact & Accès",
   description:
     "Maison Sophie — 122 Av. du Marquisat, 31170 Tournefeuille. Tél : 06 17 80 50 53. Ouvert lun–ven 9h–19h, sam 9h–12h. RDV en ligne 24h/24.",
-  alternates: { canonical: "https://maisonsophie.fr/contact" },
+  alternates: { canonical: "https://maison-sophie.fr/contact" },
   openGraph: {
     title: "Contact & Accès | Maison Sophie",
     description:
       "122 Av. du Marquisat, 31170 Tournefeuille. Tél : 06 17 80 50 53. Lun–ven 9h–19h, sam 9h–12h.",
-    url: "https://maisonsophie.fr/contact",
+    url: "https://maison-sophie.fr/contact",
     images: [{ url: "/images/hero.jpg", width: 1200, height: 630, alt: "Maison Sophie — Contact et accès Tournefeuille" }],
   },
   twitter: {

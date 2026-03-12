@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title: "Maison Sophie | Centre Technico-Esthétique à Tournefeuille",
   description:
     "Maison Sophie, centre technico-esthétique à Tournefeuille (31170). Épilation laser, photobiomodulation LED, pressothérapie, soins sportifs. RDV en ligne 24h/24.",
-  alternates: { canonical: "https://maisonsophie.fr" },
+  alternates: { canonical: "https://maison-sophie.fr" },
   openGraph: {
     title: "Maison Sophie | Centre Technico-Esthétique à Tournefeuille",
     description:
       "Épilation laser, EstheLED, pressothérapie et soins sportifs à Tournefeuille. RDV en ligne 24h/24.",
-    url: "https://maisonsophie.fr",
+    url: "https://maison-sophie.fr",
     images: [{ url: "/images/hero.jpg", width: 1200, height: 630, alt: "Maison Sophie — Centre esthétique Tournefeuille" }],
   },
   twitter: {

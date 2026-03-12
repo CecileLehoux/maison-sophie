@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: "Tarifs",
   description:
     "Tarifs épilation laser, EstheLED, pressothérapie et soins sportifs à Tournefeuille. Consultation gratuite avant toute première séance. Réservez en ligne.",
-  alternates: { canonical: "https://maisonsophie.fr/tarifs" },
+  alternates: { canonical: "https://maison-sophie.fr/tarifs" },
   openGraph: {
     title: "Tarifs | Maison Sophie",
     description:
       "Épilation laser, EstheLED, pressothérapie et soins sportifs à Tournefeuille. Tous nos tarifs en détail.",
-    url: "https://maisonsophie.fr/tarifs",
+    url: "https://maison-sophie.fr/tarifs",
     images: [{ url: "/images/hero.jpg", width: 1200, height: 630, alt: "Tarifs Maison Sophie Tournefeuille" }],
   },
   twitter: {

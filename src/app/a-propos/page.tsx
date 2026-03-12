@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "À propos — Sophie, Fondatrice",
   description:
     "Infirmière diplômée d'État reconvertie en esthéticienne, Sophie a fondé Maison Sophie à Tournefeuille avec une exigence médicale au service du soin esthétique.",
-  alternates: { canonical: "https://maisonsophie.fr/a-propos" },
+  alternates: { canonical: "https://maison-sophie.fr/a-propos" },
   openGraph: {
     title: "À propos — Sophie, Fondatrice | Maison Sophie",
     description:
       "12 ans d'expérience infirmière au service de l'esthétique. Découvrez la philosophie et l'approche de Maison Sophie à Tournefeuille.",
-    url: "https://maisonsophie.fr/a-propos",
+    url: "https://maison-sophie.fr/a-propos",
     images: [{ url: "/images/photo-sophie.jpg", width: 1200, height: 630, alt: "Sophie — Fondatrice de Maison Sophie" }],
   },
   twitter: {

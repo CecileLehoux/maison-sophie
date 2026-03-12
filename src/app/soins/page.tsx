@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: "Nos Soins",
   description:
     "Découvrez tous les soins de Maison Sophie : épilation laser, EstheLED, pressothérapie et soins sportifs à Tournefeuille. Protocoles personnalisés, technologies certifiées.",
-  alternates: { canonical: "https://maisonsophie.fr/soins" },
+  alternates: { canonical: "https://maison-sophie.fr/soins" },
   openGraph: {
     title: "Nos Soins | Maison Sophie",
     description: "Épilation laser, EstheLED, pressothérapie et soins sportifs à Tournefeuille.",
-    url: "https://maisonsophie.fr/soins",
+    url: "https://maison-sophie.fr/soins",
     images: [{ url: "/images/hero.jpg", width: 1200, height: 630, alt: "Soins Maison Sophie Tournefeuille" }],
   },
 };

@@ -20,7 +20,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://maisonsophie.fr"),
+  metadataBase: new URL("https://maison-sophie.fr"),
   title: {
     default: "Maison Sophie | Centre Technico-Esthétique à Tournefeuille",
     template: "%s | Maison Sophie — Tournefeuille",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Maison Sophie | Centre Technico-Esthétique",
     description:
       "Centre technico-esthétique à Tournefeuille. Épilation laser, EstheLED, pressothérapie, soins sportifs.",
-    url: "https://maisonsophie.fr",
+    url: "https://maison-sophie.fr",
     siteName: "Maison Sophie",
     images: [
       {
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     images: ["/images/hero.jpg"],
   },
   alternates: {
-    canonical: "https://maisonsophie.fr",
+    canonical: "https://maison-sophie.fr",
   },
   robots: {
     index: true,
@@ -81,7 +81,7 @@ export default function RootLayout({
               name: "Maison Sophie",
               description:
                 "Centre technico-esthétique expert en soins du corps et technologies bien-être. Épilation laser définitive, photobiomodulation LED, pressothérapie et soins sportifs.",
-              url: "https://maisonsophie.fr",
+              url: "https://maison-sophie.fr",
               telephone: "+33617805053",
               priceRange: "25€ – 300€",
               address: {
@@ -117,7 +117,7 @@ export default function RootLayout({
                 bestRating: "5",
                 worstRating: "1",
               },
-              image: "https://maisonsophie.fr/images/hero.jpg",
+              image: "https://maison-sophie.fr/images/hero.jpg",
               sameAs: [
                 "https://www.planity.com/maison-sophie-31170-tournefeuille",
               ],

@@ -23,11 +23,11 @@ export async function generateMetadata({
   return {
     title: soin.title,
     description: soin.excerpt,
-    alternates: { canonical: `https://maisonsophie.fr/soins/${soin.slug}` },
+    alternates: { canonical: `https://maison-sophie.fr/soins/${soin.slug}` },
     openGraph: {
       title: `${soin.title} | Maison Sophie`,
       description: soin.excerpt,
-      url: `https://maisonsophie.fr/soins/${soin.slug}`,
+      url: `https://maison-sophie.fr/soins/${soin.slug}`,
       images: [{ url: soin.heroImage, width: 1200, height: 630, alt: soin.title }],
     },
     twitter: {

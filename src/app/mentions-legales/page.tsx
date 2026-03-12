@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Mentions Légales",
   description: "Mentions légales du site Maison Sophie, centre technico-esthétique à Tournefeuille (31170).",
-  alternates: { canonical: "https://maisonsophie.fr/mentions-legales" },
+  alternates: { canonical: "https://maison-sophie.fr/mentions-legales" },
   robots: { index: false, follow: false },
 };
 
