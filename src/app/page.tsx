@@ -261,6 +261,40 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── MESOESTETIC ── */}
+      <section className="bg-[#EAE5DC] overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          {/* Texte */}
+          <div className="flex flex-col justify-center px-10 py-20 lg:px-20 lg:py-24">
+            <p className="text-[10px] tracking-[0.25em] uppercase text-[#C9A5A0] mb-6">
+              Nos produits
+            </p>
+            <h2
+              style={{ fontFamily: "var(--font-display)" }}
+              className="text-5xl lg:text-6xl font-light text-[#1C1208] tracking-tight"
+            >
+              mesoestetic<sup className="text-2xl">®</sup>
+            </h2>
+            <div className="w-8 h-px bg-[#C9A5A0] my-6" />
+            <p className="text-[13px] text-[#7A7A7A] leading-relaxed max-w-sm mb-3">
+              Parce qu&apos;un soin ne s&apos;arrête pas à la cabine, nous proposons une sélection
+              de produits mesoestetic — une marque de dermocosmétiue professionnelle que Sophie
+              utilise et recommande pour prolonger les résultats à domicile.
+            </p>
+          </div>
+          {/* Photo */}
+          <div className="relative h-[420px] lg:h-auto min-h-[400px]">
+            <Image
+              src="/images/mesoestetic-products.jpg"
+              alt="Produits mesoestetic disponibles à Maison Sophie"
+              fill
+              className="object-cover object-center"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* ── AVIS ── */}
       <section className="bg-[#1C1208] py-24 px-8 text-white text-center">
         <div className="max-w-2xl mx-auto">
