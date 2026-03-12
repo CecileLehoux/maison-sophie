@@ -136,19 +136,15 @@ export default function ProduitsPage() {
               en cabine.
             </p>
           </div>
-          {/* Bloc décoratif (placeholder si pas de photo) */}
-          <div className="hidden lg:flex items-center justify-center bg-[#D4CFC8] min-h-[480px]">
-            <div className="text-center">
-              <p
-                style={{ fontFamily: "var(--font-display)" }}
-                className="text-6xl font-light text-[#1C1208]/20 tracking-tight"
-              >
-                Novoma
-              </p>
-              <p className="text-[11px] tracking-[0.2em] uppercase text-[#1C1208]/30 mt-2">
-                compléments alimentaires
-              </p>
-            </div>
+          {/* Photo Novoma */}
+          <div className="relative h-[480px] lg:h-auto min-h-[480px]">
+            <Image
+              src="/images/novoma-products.jpg"
+              alt="Compléments alimentaires Novoma disponibles à Maison Sophie"
+              fill
+              className="object-cover object-center"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
           </div>
         </div>
       </section>
