@@ -276,10 +276,15 @@ export default function HomePage() {
               mesoestetic<sup className="text-2xl">®</sup>
             </h2>
             <div className="w-8 h-px bg-[#C9A5A0] my-6" />
+            <p className="text-[13px] text-[#7A7A7A] leading-relaxed max-w-sm mb-3">
+              Chez Maison Sophie, les soins réalisés en cabine peuvent être complétés par une
+              sélection de cosmétiques professionnels afin de prolonger et optimiser les résultats
+              au quotidien.
+            </p>
             <p className="text-[13px] text-[#7A7A7A] leading-relaxed max-w-sm mb-6">
-              Parce qu&apos;un soin ne s&apos;arrête pas à la cabine, nous proposons une sélection
-              de produits mesoestetic — une marque de dermocosmétiue professionnelle que Sophie
-              utilise et recommande pour prolonger les résultats à domicile.
+              J&apos;ai choisi de travailler avec la marque Mesoestetic, reconnue
+              internationalement pour son expertise en dermocosmétique et utilisée par de nombreux
+              professionnels de la peau.
             </p>
             <Link
               href="/produits"
