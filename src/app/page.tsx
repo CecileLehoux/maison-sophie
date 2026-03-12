@@ -276,11 +276,18 @@ export default function HomePage() {
               mesoestetic<sup className="text-2xl">®</sup>
             </h2>
             <div className="w-8 h-px bg-[#C9A5A0] my-6" />
-            <p className="text-[13px] text-[#7A7A7A] leading-relaxed max-w-sm mb-3">
+            <p className="text-[13px] text-[#7A7A7A] leading-relaxed max-w-sm mb-6">
               Parce qu&apos;un soin ne s&apos;arrête pas à la cabine, nous proposons une sélection
               de produits mesoestetic — une marque de dermocosmétiue professionnelle que Sophie
               utilise et recommande pour prolonger les résultats à domicile.
             </p>
+            <Link
+              href="/produits"
+              className="inline-flex items-center gap-2 text-[11px] tracking-[0.2em] uppercase text-[#1C1208] hover:text-[#C9A5A0] transition-colors duration-200"
+            >
+              En savoir +
+              <span className="w-6 h-px bg-current" />
+            </Link>
           </div>
           {/* Photo */}
           <div className="relative h-[420px] lg:h-auto min-h-[400px]">
