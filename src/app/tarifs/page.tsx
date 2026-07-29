@@ -165,16 +165,6 @@ const categories: Category[] = [
       { name: "Cure 5 séances + 1 offerte", price: "125 €", duration: "30 min / séance", desc: "La 6e séance est offerte" },
     ],
   },
-  {
-    id: "massages",
-    title: "Massages",
-    subtitle: "Détente musculaire ciblée",
-    color: "#C9A5A0",
-    services: [
-      { name: "Massage sportif du dos", price: "50 €", duration: "45 min" },
-      { name: "Massage sportif des jambes", price: "50 €", duration: "45 min" },
-    ],
-  },
 ];
 
 // Ancres de navigation
@@ -183,7 +173,6 @@ const navAnchors = [
   { id: "v-tox-lift", label: "Soins Visage Experts" },
   { id: "estheled-visage", label: "EstheLED" },
   { id: "pressotherapie", label: "Pressothérapie" },
-  { id: "massages", label: "Massages" },
 ];
 
 export default function TarifsPage() {

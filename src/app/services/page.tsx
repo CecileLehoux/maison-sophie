@@ -4,12 +4,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Soins & Tarifs",
   description:
-    "Épilation laser, EstheLED, pressothérapie, massages et soins du visage experts à Tournefeuille. Tarifs détaillés et prise de RDV en ligne.",
+    "Épilation laser, EstheLED, pressothérapie et soins du visage experts à Tournefeuille. Tarifs détaillés et prise de RDV en ligne.",
   alternates: { canonical: "https://maison-sophie.fr/services" },
   openGraph: {
     title: "Soins & Tarifs | Maison Sophie",
     description:
-      "Épilation laser, EstheLED, pressothérapie, massages et soins du visage experts à Tournefeuille. Tarifs détaillés.",
+      "Épilation laser, EstheLED, pressothérapie et soins du visage experts à Tournefeuille. Tarifs détaillés.",
     url: "https://maison-sophie.fr/services",
     images: [{ url: "/images/photo-3.jpg", width: 1200, height: 630, alt: "Soins et tarifs Maison Sophie Tournefeuille" }],
   },
@@ -115,17 +115,6 @@ const categories: Category[] = [
       { name: "Cure 5 séances + 1 offerte", price: "125€", duration: "30 min / séance" },
     ],
   },
-  {
-    id: "massages",
-    icon: "💆",
-    title: "Massages",
-    subtitle: "Détente musculaire ciblée",
-    color: "#F6E05E",
-    services: [
-      { name: "Massage sportif du dos", price: "50€", duration: "45 min" },
-      { name: "Massage sportif des jambes", price: "50€", duration: "45 min" },
-    ],
-  },
 ];
 
 export default function ServicesPage() {
@@ -163,7 +152,6 @@ export default function ServicesPage() {
             { id: "laser", label: "⚡️ Laser" },
             { id: "estheled", label: "💡 EstheLED" },
             { id: "pression", label: "💨 Pressothérapie" },
-            { id: "massages", label: "💆 Massages" },
           ].map((item) => (
             <a
               key={item.id}
