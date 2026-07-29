@@ -187,17 +187,11 @@ const categories: Category[] = [
     subtitle: "Photobiomodulation LED · Anti-âge, éclat, imperfections",
     color: "#C9A5A0",
     soinSlug: "estheled",
-    note: "Consultation gratuite et obligatoire avant la première séance.",
+    note: "La séance découverte gratuite fait office de consultation avant la première séance.",
     services: [
       { name: "Séance découverte", price: "Gratuit", duration: "30 min" },
       { name: "Séance d'entretien", price: "35 €", duration: "30 min", desc: "Pour les personnes ayant déjà réalisé une cure ou une séance" },
       { name: "Cure 7 séances", price: "190 €", duration: "30 min / séance", desc: "6 séances + 1 offerte, au lieu de 245 €" },
-      { name: "Cure Anti-âge Lumière", price: "300 €", duration: "45 min", desc: "Agit sur les rides, ridules et perte de fermeté" },
-      { name: "Cure Glow & Éclat", price: "190 €", duration: "30 min", desc: "Peaux en manque d'éclat et de luminosité" },
-      { name: "Cure Peau Apaisée", price: "190 €", duration: "30 min", desc: "Peaux sensibles, réactives, rougeurs" },
-      { name: "Cure Peau Nette", price: "190 €", duration: "30 min", desc: "Peaux sujettes aux imperfections" },
-      { name: "Cure Peau Parfaite — Mariée", price: "230 €", duration: "60 min", desc: "Protocole spécial mariage" },
-      { name: "Consultation EstheLED", price: "Gratuit", duration: "20 min", desc: "Obligatoire avant la 1ère séance" },
     ],
   },
   {
