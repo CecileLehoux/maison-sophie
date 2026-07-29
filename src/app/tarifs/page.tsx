@@ -139,6 +139,7 @@ const categories: Category[] = [
     subtitle: "Hydratation et embellissement des lèvres",
     color: "#C9A5A0",
     soinSlug: "hydralips",
+    note: "Cure de 4 séances espacées de 3 semaines conseillée pour un résultat optimal.",
     services: [
       { name: "Séance Hydralips", price: "35 €", duration: "30 min" },
       { name: "Cure 4 séances", price: "120 €", duration: "30 min / séance", desc: "Au lieu de 140 €" },
@@ -150,6 +151,7 @@ const categories: Category[] = [
     subtitle: "Peaux sujettes aux rougeurs et aux imperfections",
     color: "#C9A5A0",
     soinSlug: "inflacure",
+    note: "Cure de 4 séances conseillée pour un résultat optimal.",
     services: [
       { name: "Séance Inflacure", price: "90 €", duration: "60 min" },
       { name: "Cure 4 séances", price: "320 €", duration: "60 min / séance", desc: "Paiement en 2 fois possible (2 × 160 €)" },
@@ -161,6 +163,7 @@ const categories: Category[] = [
     subtitle: "Fermeté et qualité de la peau",
     color: "#C9A5A0",
     soinSlug: "thread-fill",
+    note: "Cure de 4 séances espacées de 15 jours conseillée pour un résultat optimal.",
     services: [
       { name: "Séance Thread Fill", price: "90 €", duration: "60 min" },
       { name: "Cure 4 séances", price: "320 €", duration: "60 min / séance", desc: "Paiement en 2 fois possible (2 × 160 €)" },
@@ -172,7 +175,7 @@ const categories: Category[] = [
     subtitle: "Soin personnalisable selon vos besoins",
     color: "#C9A5A0",
     soinSlug: "microneedling",
-    note: "Une cure de plusieurs séances espacées de quelques semaines peut être proposée selon vos objectifs.",
+    note: "Cure de 4 séances espacées de 15 jours conseillée pour un résultat optimal.",
     services: [
       { name: "Séance Microneedling", price: "80 €", duration: "60 min" },
       { name: "Cure 4 séances", price: "280 €", duration: "60 min / séance", desc: "Paiement en 2 fois possible (2 × 140 €)" },
@@ -187,8 +190,8 @@ const categories: Category[] = [
     note: "Consultation gratuite et obligatoire avant la première séance.",
     services: [
       { name: "Séance découverte", price: "Gratuit", duration: "30 min" },
-      { name: "Séance d'entretien", price: "35 €", duration: "30 min" },
-      { name: "Cure 7 séances", price: "190 €", duration: "30 min / séance", desc: "Au lieu de 245 €" },
+      { name: "Séance d'entretien", price: "35 €", duration: "30 min", desc: "Pour les personnes ayant déjà réalisé une cure ou une séance" },
+      { name: "Cure 7 séances", price: "190 €", duration: "30 min / séance", desc: "6 séances + 1 offerte, au lieu de 245 €" },
       { name: "Cure Anti-âge Lumière", price: "300 €", duration: "45 min", desc: "Agit sur les rides, ridules et perte de fermeté" },
       { name: "Cure Glow & Éclat", price: "190 €", duration: "30 min", desc: "Peaux en manque d'éclat et de luminosité" },
       { name: "Cure Peau Apaisée", price: "190 €", duration: "30 min", desc: "Peaux sensibles, réactives, rougeurs" },
@@ -219,7 +222,7 @@ const categories: Category[] = [
     services: [
       { name: "Séance à l'unité", price: "25 €", duration: "30 min" },
       { name: "Cure 5 séances + 1 offerte", price: "125 €", duration: "30 min / séance", desc: "La 6e séance est offerte" },
-      { name: "Récupération sportive", price: "55 €", duration: "45 min" },
+      { name: "Récupération sportive", price: "55 €", duration: "45 min", desc: "Associe photobiomodulation LED et pressothérapie" },
     ],
   },
 ];

@@ -122,8 +122,8 @@ const categories: Category[] = [
     note: "Consultation gratuite et obligatoire avant la première séance.",
     services: [
       { name: "Séance découverte", price: "Gratuit", duration: "30 min" },
-      { name: "Séance d'entretien", price: "35€", duration: "30 min" },
-      { name: "Cure 7 séances", price: "190€", duration: "30 min / séance", desc: "Au lieu de 245€" },
+      { name: "Séance d'entretien", price: "35€", duration: "30 min", desc: "Pour les personnes ayant déjà réalisé une cure ou une séance" },
+      { name: "Cure 7 séances", price: "190€", duration: "30 min / séance", desc: "6 séances + 1 offerte, au lieu de 245€" },
       { name: "Cure Anti-âge Lumière", price: "300€", duration: "45 min", desc: "Agit sur les rides, ridules et perte de fermeté" },
       { name: "Cure Glow & Éclat", price: "190€", duration: "30 min", desc: "Peaux en manque d'éclat et de luminosité" },
       { name: "Cure Peau Apaisée", price: "190€", duration: "30 min", desc: "Peaux sensibles, réactives, rougeurs" },
@@ -154,7 +154,7 @@ const categories: Category[] = [
     services: [
       { name: "Séance à l'unité", price: "25€", duration: "30 min" },
       { name: "Cure 5 séances + 1 offerte", price: "125€", duration: "30 min / séance" },
-      { name: "Récupération sportive", price: "55€", duration: "45 min" },
+      { name: "Récupération sportive", price: "55€", duration: "45 min", desc: "Associe photobiomodulation LED et pressothérapie" },
     ],
   },
 ];
