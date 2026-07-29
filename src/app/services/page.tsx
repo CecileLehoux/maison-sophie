@@ -79,7 +79,7 @@ const categories: Category[] = [
     icon: "💡",
     title: "EstheLED — Soins Visage",
     subtitle: "Photobiomodulation LED · Anti-âge, éclat, imperfections",
-    color: "#44b4e7",
+    color: "#C9A5A0",
     note: "Consultation gratuite et obligatoire avant la première séance.",
     services: [
       { name: "Séance découverte / entretien", price: "35€", duration: "30 min" },
@@ -96,7 +96,7 @@ const categories: Category[] = [
     icon: "💡",
     title: "EstheLED — Soin Cheveux",
     subtitle: "Photobiomodulation · Densité, vitalité, cuir chevelu",
-    color: "#44b4e7",
+    color: "#C9A5A0",
     services: [
       { name: "Séance découverte / entretien", price: "35€", duration: "30 min" },
       { name: "Cure Densité & Vitalité", price: "300€", duration: "30 min", desc: "Chute saisonnière, perte de densité" },

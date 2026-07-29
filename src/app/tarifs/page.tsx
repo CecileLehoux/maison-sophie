@@ -128,7 +128,7 @@ const categories: Category[] = [
     id: "estheled-visage",
     title: "EstheLED — Soins Visage",
     subtitle: "Photobiomodulation LED · Anti-âge, éclat, imperfections",
-    color: "#44b4e7",
+    color: "#C9A5A0",
     soinSlug: "estheled",
     note: "Consultation gratuite et obligatoire avant la première séance.",
     services: [
@@ -145,7 +145,7 @@ const categories: Category[] = [
     id: "estheled-cheveux",
     title: "EstheLED — Soin Cheveux",
     subtitle: "Photobiomodulation · Densité, vitalité, cuir chevelu",
-    color: "#44b4e7",
+    color: "#C9A5A0",
     soinSlug: "estheled",
     services: [
       { name: "Séance découverte / entretien", price: "35 €", duration: "30 min" },
