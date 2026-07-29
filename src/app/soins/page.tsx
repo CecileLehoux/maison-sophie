@@ -6,11 +6,11 @@ import { soins } from "@/data/soins";
 export const metadata: Metadata = {
   title: "Nos Soins",
   description:
-    "Découvrez tous les soins de Maison Sophie : épilation laser, EstheLED, pressothérapie et soins sportifs à Tournefeuille. Protocoles personnalisés, technologies certifiées.",
+    "Découvrez tous les soins de Maison Sophie : épilation laser, EstheLED, soins du visage experts et pressothérapie à Tournefeuille. Protocoles personnalisés, technologies certifiées.",
   alternates: { canonical: "https://maison-sophie.fr/soins" },
   openGraph: {
     title: "Nos Soins | Maison Sophie",
-    description: "Épilation laser, EstheLED, pressothérapie et soins sportifs à Tournefeuille.",
+    description: "Épilation laser, EstheLED, soins du visage experts et pressothérapie à Tournefeuille.",
     url: "https://maison-sophie.fr/soins",
     images: [{ url: "/images/hero.jpg", width: 1200, height: 630, alt: "Soins Maison Sophie Tournefeuille" }],
   },
@@ -29,10 +29,32 @@ export default function SoinsPage() {
           >
             Nos soins<br />& expertises
           </h1>
-          <p className="mt-6 text-[#7A7A7A] max-w-xl leading-relaxed">
-            Chaque soin commence par une consultation gratuite. Nous prenons le temps
-            de comprendre vos objectifs avant de vous proposer le protocole le plus adapté.
-          </p>
+          <div className="mt-6 space-y-4 text-[#7A7A7A] max-w-2xl leading-relaxed">
+            <p>
+              Chaque peau est unique. C&apos;est pourquoi il n&apos;existe pas un soin visage
+              qui convient à tout le monde.
+            </p>
+            <p>
+              Chez Maison Sophie, chaque protocole est choisi en fonction des besoins de votre
+              peau, de vos préoccupations et de vos objectifs. Hydratation, éclat, imperfections,
+              rougeurs, prévention du vieillissement cutané ou perte de fermeté : chaque soin est
+              pensé pour apporter une réponse adaptée.
+            </p>
+            <p>
+              J&apos;ai sélectionné des protocoles professionnels associant des actifs performants,
+              des techniques innovantes et une prise en charge personnalisée afin d&apos;obtenir des
+              résultats visibles tout en respectant l&apos;équilibre de votre peau.
+            </p>
+            <p>
+              Mon approche repose sur l&apos;écoute, l&apos;observation et le choix du soin le plus
+              adapté à votre situation, parce qu&apos;un soin efficace est avant tout un soin qui
+              répond réellement aux besoins de votre peau.
+            </p>
+            <p>
+              Découvrez les différents protocoles proposés chez Maison Sophie et trouvons ensemble
+              celui qui vous correspond.
+            </p>
+          </div>
         </div>
       </section>
 

@@ -4,19 +4,19 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Tarifs",
   description:
-    "Tarifs épilation laser, EstheLED, pressothérapie et soins sportifs à Tournefeuille. Consultation gratuite avant toute première séance. Réservez en ligne.",
+    "Tarifs épilation laser, EstheLED, pressothérapie et soins du visage experts à Tournefeuille. Consultation gratuite avant toute première séance. Réservez en ligne.",
   alternates: { canonical: "https://maison-sophie.fr/tarifs" },
   openGraph: {
     title: "Tarifs | Maison Sophie",
     description:
-      "Épilation laser, EstheLED, pressothérapie et soins sportifs à Tournefeuille. Tous nos tarifs en détail.",
+      "Épilation laser, EstheLED, pressothérapie et soins du visage experts à Tournefeuille. Tous nos tarifs en détail.",
     url: "https://maison-sophie.fr/tarifs",
     images: [{ url: "/images/hero.jpg", width: 1200, height: 630, alt: "Tarifs Maison Sophie Tournefeuille" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Tarifs | Maison Sophie",
-    description: "Tous nos tarifs à Tournefeuille — épilation laser, EstheLED, pressothérapie, soins sportifs.",
+    description: "Tous nos tarifs à Tournefeuille — épilation laser, EstheLED, pressothérapie, soins du visage experts.",
     images: ["/images/hero.jpg"],
   },
 };
@@ -83,6 +83,48 @@ const categories: Category[] = [
     ],
   },
   {
+    id: "v-tox-lift",
+    title: "V-Tox Lift",
+    subtitle: "Soin visage expert — éclat, fermeté, anti-âge",
+    color: "#C9A5A0",
+    soinSlug: "v-tox-lift",
+    note: "Cure de 4 séances espacées de 7 jours conseillée pour un résultat optimal.",
+    services: [{ name: "Séance V-Tox Lift", price: "70 €", duration: "60 min" }],
+  },
+  {
+    id: "hydralips",
+    title: "Hydralips",
+    subtitle: "Hydratation et embellissement des lèvres",
+    color: "#C9A5A0",
+    soinSlug: "hydralips",
+    services: [{ name: "Séance Hydralips", price: "35 €", duration: "30 min" }],
+  },
+  {
+    id: "inflacure",
+    title: "Inflacure",
+    subtitle: "Peaux sujettes aux rougeurs et aux imperfections",
+    color: "#C9A5A0",
+    soinSlug: "inflacure",
+    services: [{ name: "Séance Inflacure", price: "90 €", duration: "60 min" }],
+  },
+  {
+    id: "thread-fill",
+    title: "Thread Fill",
+    subtitle: "Fermeté et qualité de la peau",
+    color: "#C9A5A0",
+    soinSlug: "thread-fill",
+    services: [{ name: "Séance Thread Fill", price: "90 €", duration: "60 min" }],
+  },
+  {
+    id: "microneedling",
+    title: "Microneedling",
+    subtitle: "Soin personnalisable selon vos besoins",
+    color: "#C9A5A0",
+    soinSlug: "microneedling",
+    note: "Une cure de plusieurs séances espacées de quelques semaines peut être proposée selon vos objectifs.",
+    services: [{ name: "Séance Microneedling", price: "80 €", duration: "60 min" }],
+  },
+  {
     id: "estheled-visage",
     title: "EstheLED — Soins Visage",
     subtitle: "Photobiomodulation LED · Anti-âge, éclat, imperfections",
@@ -124,33 +166,6 @@ const categories: Category[] = [
     ],
   },
   {
-    id: "sportifs",
-    title: "Soins Sportifs",
-    subtitle: "Récupération, performance, mobilité",
-    color: "#C9A5A0",
-    soinSlug: "sportifs",
-    services: [
-      {
-        name: "Récupération Express",
-        price: "65 €",
-        duration: "60 min",
-        desc: "Pressothérapie + 30 min de massage ciblé. Idéal dans les 24–72h après l'effort.",
-      },
-      {
-        name: "Récupération Profonde",
-        price: "90 €",
-        duration: "90 min",
-        desc: "LED + pressothérapie + massage global 45 min. Soin complet post-effort.",
-      },
-      {
-        name: "Préparation Compétition",
-        price: "60 €",
-        duration: "45 min",
-        desc: "Soin énergisant avec massage d'activation avant un entraînement ou une compétition.",
-      },
-    ],
-  },
-  {
     id: "massages",
     title: "Massages",
     subtitle: "Détente musculaire ciblée",
@@ -165,9 +180,9 @@ const categories: Category[] = [
 // Ancres de navigation
 const navAnchors = [
   { id: "laser", label: "Épilation Laser" },
+  { id: "v-tox-lift", label: "Soins Visage Experts" },
   { id: "estheled-visage", label: "EstheLED" },
   { id: "pressotherapie", label: "Pressothérapie" },
-  { id: "sportifs", label: "Soins Sportifs" },
   { id: "massages", label: "Massages" },
 ];
 

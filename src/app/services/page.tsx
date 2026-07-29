@@ -4,19 +4,19 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Soins & Tarifs",
   description:
-    "Épilation laser, EstheLED, pressothérapie, massages et soins sportifs à Tournefeuille. Tarifs détaillés et prise de RDV en ligne.",
+    "Épilation laser, EstheLED, pressothérapie, massages et soins du visage experts à Tournefeuille. Tarifs détaillés et prise de RDV en ligne.",
   alternates: { canonical: "https://maison-sophie.fr/services" },
   openGraph: {
     title: "Soins & Tarifs | Maison Sophie",
     description:
-      "Épilation laser, EstheLED, pressothérapie, massages et soins sportifs à Tournefeuille. Tarifs détaillés.",
+      "Épilation laser, EstheLED, pressothérapie, massages et soins du visage experts à Tournefeuille. Tarifs détaillés.",
     url: "https://maison-sophie.fr/services",
     images: [{ url: "/images/photo-3.jpg", width: 1200, height: 630, alt: "Soins et tarifs Maison Sophie Tournefeuille" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Soins & Tarifs | Maison Sophie",
-    description: "Épilation laser, EstheLED, pressothérapie et soins sportifs à Tournefeuille.",
+    description: "Épilation laser, EstheLED, pressothérapie et soins du visage experts à Tournefeuille.",
     images: ["/images/photo-3.jpg"],
   },
 };
@@ -116,33 +116,6 @@ const categories: Category[] = [
     ],
   },
   {
-    id: "sport",
-    icon: "🏅",
-    title: "Soins Sportifs",
-    subtitle: "Récupération, performance, mobilité",
-    color: "#C9A5A0",
-    services: [
-      {
-        name: "Récupération Express",
-        price: "65€",
-        duration: "60 min",
-        desc: "Pressothérapie + 30 min de massage ciblé. Idéal dans les 24–72h après l'effort.",
-      },
-      {
-        name: "Récupération Profonde",
-        price: "90€",
-        duration: "90 min",
-        desc: "LED + pressothérapie + massage global 45 min. Soin complet post-effort.",
-      },
-      {
-        name: "Préparation Compétition",
-        price: "60€",
-        duration: "45 min",
-        desc: "Soin énergisant avec massage d'activation avant un entraînement ou une compétition.",
-      },
-    ],
-  },
-  {
     id: "massages",
     icon: "💆",
     title: "Massages",
@@ -190,7 +163,6 @@ export default function ServicesPage() {
             { id: "laser", label: "⚡️ Laser" },
             { id: "estheled", label: "💡 EstheLED" },
             { id: "pression", label: "💨 Pressothérapie" },
-            { id: "sport", label: "🏅 Soins sportifs" },
             { id: "massages", label: "💆 Massages" },
           ].map((item) => (
             <a

@@ -26,19 +26,19 @@ export const metadata: Metadata = {
     template: "%s | Maison Sophie — Tournefeuille",
   },
   description:
-    "Maison Sophie, centre technico-esthétique à Tournefeuille (31170). Épilation laser, photobiomodulation LED, pressothérapie, soins sportifs. RDV en ligne 24h/24.",
+    "Maison Sophie, centre technico-esthétique à Tournefeuille (31170). Épilation laser, photobiomodulation LED, soins du visage experts, pressothérapie. RDV en ligne 24h/24.",
   keywords:
-    "épilation laser Tournefeuille, institut beauté Tournefeuille, photobiomodulation LED, EstheLED, pressothérapie, soins sportifs 31170, Maison Sophie",
+    "épilation laser Tournefeuille, institut beauté Tournefeuille, photobiomodulation LED, EstheLED, soins du visage Tournefeuille, pressothérapie 31170, Maison Sophie",
   authors: [{ name: "Maison Sophie" }],
   openGraph: {
     title: "Maison Sophie | Centre Technico-Esthétique",
     description:
-      "Centre technico-esthétique à Tournefeuille. Épilation laser, EstheLED, pressothérapie, soins sportifs.",
+      "Centre technico-esthétique à Tournefeuille. Épilation laser, EstheLED, soins du visage experts, pressothérapie.",
     url: "https://maison-sophie.fr",
     siteName: "Maison Sophie",
     images: [
       {
-        url: "/images/hero.jpg",
+        url: "/images/hero-banner.jpg",
         width: 1200,
         height: 630,
         alt: "Maison Sophie - Centre technico-esthétique Tournefeuille",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Maison Sophie | Centre Technico-Esthétique à Tournefeuille",
     description:
-      "Épilation laser, EstheLED, pressothérapie et soins sportifs à Tournefeuille. RDV en ligne 24h/24.",
+      "Épilation laser, EstheLED, soins du visage experts et pressothérapie à Tournefeuille. RDV en ligne 24h/24.",
     images: ["/images/hero.jpg"],
   },
   alternates: {
@@ -80,7 +80,7 @@ export default function RootLayout({
               "@type": "HealthAndBeautyBusiness",
               name: "Maison Sophie",
               description:
-                "Centre technico-esthétique expert en soins du corps et technologies bien-être. Épilation laser définitive, photobiomodulation LED, pressothérapie et soins sportifs.",
+                "Centre technico-esthétique expert en soins du corps et technologies bien-être. Épilation laser définitive, photobiomodulation LED, soins du visage experts et pressothérapie.",
               url: "https://maison-sophie.fr",
               telephone: "+33617805053",
               priceRange: "25€ – 300€",
