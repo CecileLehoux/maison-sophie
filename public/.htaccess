@@ -1,6 +1,10 @@
 Options -Indexes
 ErrorDocument 404 /404.html
 
+# Empêche Apache de rediriger /page vers /page/ avant la réécriture ci-dessous
+# (Next.js génère un dossier "page/" vide à côté de "page.html" pour le prefetch RSC)
+DirectorySlash Off
+
 RewriteEngine On
 RewriteBase /
 
