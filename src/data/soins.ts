@@ -84,7 +84,7 @@ export const soins: Soin[] = [
       },
       {
         q: "Combien de séances sont nécessaires ?",
-        a: "En moyenne, 6 à 8 séances sont nécessaires pour un résultat optimal, espacées de 6 à 8 semaines pour respecter le cycle de croissance du poil. Le nombre exact dépend de votre type de peau, de la couleur et de la densité de vos poils.",
+        a: "En moyenne, 8 séances pour les femmes et 10 séances pour les hommes sont nécessaires pour un résultat optimal, espacées de 6 à 8 semaines pour respecter le cycle de croissance du poil. Le nombre exact dépend de votre type de peau, de la couleur et de la densité de vos poils.",
       },
       {
         q: "Est-ce douloureux ?",
